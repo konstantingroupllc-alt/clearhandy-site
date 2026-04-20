@@ -173,26 +173,11 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Right Side - 2x2 Photo Grid (55%) */}
-        <div className="hidden lg:grid lg:w-[55%] grid-cols-2 grid-rows-2 gap-1">
+        {/* Right Side - Single Hero Image (55%) */}
+        <div className="hidden lg:block lg:w-[55%] h-full overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=80"
-            alt="AC and ceiling work"
-            className="w-full h-full object-cover"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1572981779307-38b8cabb2407?w=800&q=80"
-            alt="Handyman with tools"
-            className="w-full h-full object-cover"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=800&q=80"
-            alt="Interior painting"
-            className="w-full h-full object-cover"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=80"
-            alt="Plumbing work"
+            src="/hero.jpg"
+            alt="Professional handyman services"
             className="w-full h-full object-cover"
           />
         </div>
