@@ -33,7 +33,7 @@ export default function TermsOfService() {
 
           <div>
             <h2 className="text-xl font-semibold mb-2">5. Payment</h2>
-            <p>Payment is due upon completion of work. We accept cash, credit/debit cards, Apple Pay, and checks. Returned checks are subject to a $35 fee.</p>
+            <p>Payment is due upon completion of work. We accept This pro accepts payments via Apple Pay, Cash, Credit card, Google Pay, PayPal, Samsung Pay, Square cash app, Venmo, and Zelle..</p>
           </div>
 
           <div>
