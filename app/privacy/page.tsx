@@ -1,9 +1,9 @@
 export default function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-background">
-      <header className="border-b border-border py-4 px-8">
-        <a href="/" className="flex items-center gap-2">
-          <img src="/logo.png" alt="ClearHandy" className="h-12 w-auto" />
+      <header className="border-b px-8 py-3 flex items-center">
+        <a href="/" className="flex items-center">
+          <img src="/logo.png" alt="ClearHandy" className="h-10 w-auto" />
         </a>
       </header>
       <main className="container mx-auto px-8 py-16 max-w-3xl">
