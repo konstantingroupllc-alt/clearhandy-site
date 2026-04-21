@@ -278,10 +278,10 @@ export default function HomePage() {
                   <div>
                     <h3 className="font-semibold text-foreground">Email</h3>
                     <a
-                      href="mailto:konstantingroupllc@gmail.com"
+                      href="mailto:konst@clearhandy.com"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      konstantingroupllc@gmail.com
+                      konst@clearhandy.com
                     </a>
                   </div>
                 </div>
@@ -396,8 +396,8 @@ export default function HomePage() {
                 </li>
                 <li className="flex items-center gap-2">
                   <Mail className="h-4 w-4" />
-                  <a href="mailto:konstantingroupllc@gmail.com" className="hover:text-primary-foreground transition-colors">
-                    konstantingroupllc@gmail.com
+                  <a href="mailto:konst@clearhandy.com" className="hover:text-primary-foreground transition-colors">
+                    konst@clearhandy.com
                   </a>
                 </li>
                 <li className="flex items-center gap-2">
