@@ -102,10 +102,10 @@ export default function HomePage() {
     <div className="min-h-screen">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/80 border-b border-border">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-12">
           <div className="flex items-center justify-between h-16">
             <a href="#" className="flex items-center gap-2">
-              <img src="/logo.png" alt="ClearHandy" className="h-20 w-auto" />
+              <img src="/logo.png" alt="ClearHandy" className="h-12 w-auto" />
             </a>
 
             {/* Desktop Navigation */}
