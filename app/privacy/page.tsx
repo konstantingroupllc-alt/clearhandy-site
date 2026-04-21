@@ -3,7 +3,7 @@ export default function PrivacyPolicy() {
     <div className="min-h-screen bg-background">
       <header className="border-b px-8 py-3 flex items-center">
         <a href="/" className="flex items-center">
-          <img src="/logo.png" alt="ClearHandy" className="h-10 w-auto" />
+          <img src="/logo.png" alt="ClearHandy" className="h-22 w-auto" />
         </a>
       </header>
       <main className="container mx-auto px-8 py-16 max-w-3xl">
