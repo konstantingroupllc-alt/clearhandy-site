@@ -162,17 +162,14 @@ export default function HomePage() {
       <section className="h-[calc(100vh-80px)] flex overflow-hidden" style={{background: "linear-gradient(135deg, #f5f0eb 0%, #ede8e1 50%, #e8e2d9 100%)"}}>
         {/* Left Side - Text Content (45%) */}
         <div className="w-full lg:w-[45%] flex flex-col justify-center px-12 py-8">
-          <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-foreground leading-tight text-balance">
-            Fix It Right the First Time — No Delays, No Headaches
+          <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-foreground leading-tight">
+            Fix It Right the First Time —<br />No Delays. No Headaches.
           </h1>
           <p className="mt-6 text-lg md:text-xl text-muted-foreground leading-relaxed">
             Fast. Clean. Reliable. No stress — just results.
           </p>
-          <p className="mt-3 text-base text-muted-foreground leading-relaxed">
-            TV mounting, furniture assembly, drywall repair, electrical fixes, and more — done right, on time, and with attention to detail. Serving Clearwater, St. Petersburg, Tampa, and nearby areas.
-          </p>
           <p className="mt-4 text-sm text-foreground font-medium">
-            ✔ Fast response &nbsp;&nbsp; ✔ On-time and reliable &nbsp;&nbsp; ✔ Clean, professional work
+            ✔ Fast response &nbsp;&nbsp; ✔ On-time and reliable &nbsp;&nbsp; ✔ Clean, professional work &nbsp;&nbsp; ✔ Respect for your home
           </p>
           <div className="mt-6 flex flex-col sm:flex-row gap-4">
             <Button size="lg" asChild>
@@ -182,8 +179,11 @@ export default function HomePage() {
               <a href="#services">View Services →</a>
             </Button>
           </div>
-          <p className="mt-4 text-sm text-muted-foreground">
-            📞 Call or text: <a href="tel:+17272223122" className="font-semibold text-foreground hover:underline">(727) 222-3122</a>
+          <p className="mt-3 text-xs text-muted-foreground">
+            Free estimate • No hidden fees
+          </p>
+          <p className="mt-3 text-sm text-muted-foreground">
+            📞 Call or text now: <a href="tel:+17272223122" className="font-semibold text-foreground hover:underline">(727) 222-3122</a>
           </p>
         </div>
 
