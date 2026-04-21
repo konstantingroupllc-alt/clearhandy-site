@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -75,6 +75,14 @@ const services = [
 
 export default function HomePage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [scrollY, setScrollY] = useState(0)
+
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY)
+    window.addEventListener("scroll", handleScroll, { passive: true })
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -97,7 +105,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             <a href="#" className="flex items-center gap-2">
-              <img src="/logo.png" alt="ClearHandy" className="h-12 w-auto" />
+              <img src="/logo.png" alt="ClearHandy" className="h-14 w-auto" />
             </a>
 
             {/* Desktop Navigation */}
@@ -163,7 +171,8 @@ export default function HomePage() {
         {/* Left Side - Text Content (45%) */}
         <div className="w-full lg:w-[45%] flex flex-col justify-center px-12 py-8">
           <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-foreground leading-tight">
-            Fix It Right the First Time<br />No Delays. No Headaches.
+            Fix It Right the First Time
+            <span className="block">No Delays. No Headaches.</span>
           </h1>
           <p className="mt-6 text-lg md:text-xl text-muted-foreground leading-relaxed">
             Fast. Clean. Reliable. No stress — just results.
@@ -196,6 +205,7 @@ export default function HomePage() {
             src="/ClearHandy.png"
             alt="Professional handyman services"
             className="w-full h-full object-contain object-bottom"
+            style={{ transform: `translateY(${scrollY * 0.15}px)`, transition: "transform 0.1s linear" }}
           />
         </div>
       </section>
