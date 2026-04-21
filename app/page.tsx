@@ -147,7 +147,7 @@ export default function HomePage() {
 
           <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
             Fix It Right the First Time
-            <span className="block">No Delays. No Headaches.</span>
+            <span className="block lg:whitespace-nowrap">No Delays. No Headaches.</span>
           </h1>
           <p className="mt-3 text-base md:text-xl lg:text-2xl text-muted-foreground">
             Fast. Clean. Reliable.
