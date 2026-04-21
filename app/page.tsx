@@ -140,7 +140,7 @@ export default function HomePage() {
       </div>
 
       {/* Hero Section */}
-      <section className="min-h-[calc(100vh-56px)] flex flex-col lg:flex-row overflow-hidden pb-16 md:pb-0" style={{background: "linear-gradient(135deg, #f5f0eb 0%, #ede8e1 50%, #e8e2d9 100%)"}}>
+      <section className="flex flex-col lg:flex-row lg:min-h-[calc(100vh-56px)] overflow-hidden pb-20 md:pb-0" style={{background: "linear-gradient(135deg, #f5f0eb 0%, #ede8e1 50%, #e8e2d9 100%)"}}>
 
         {/* Left Side - Text Content */}
         <div className="w-full lg:w-[45%] flex flex-col justify-center px-6 lg:px-12 py-8">
@@ -154,18 +154,19 @@ export default function HomePage() {
           </p>
 
           {/* Mobile: checkmarks left, photo right */}
-          <div className="mt-4 flex flex-row lg:block gap-2">
+          <div className="mt-4 flex flex-row lg:block gap-2 items-start">
             <div className="flex flex-col gap-2 text-sm md:text-base text-foreground font-medium flex-1">
               <span>✔ Same-day response</span>
               <span>✔ On-time arrival</span>
               <span>✔ No hidden fees</span>
             </div>
-            {/* Mobile photo - right of checkmarks */}
-            <div className="block lg:hidden w-[42%] flex-shrink-0 -mt-2">
+            {/* Mobile photo - right of checkmarks, large, cropped to chest */}
+            <div className="block lg:hidden w-[55%] flex-shrink-0 overflow-hidden" style={{maxHeight: '200px'}}>
               <img
                 src="/ClearHandy.png"
                 alt="Professional handyman"
-                className="w-full h-auto object-contain"
+                className="w-full object-cover object-top"
+                style={{marginLeft: 'auto', display: 'block', transform: 'scale(1.4)', transformOrigin: 'top right'}}
               />
             </div>
           </div>
