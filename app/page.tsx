@@ -103,85 +103,88 @@ export default function HomePage() {
       {/* Header */}
       <header className="sticky top-0 z-50 bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/80 border-b border-border">
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-14">
             <a href="#" className="flex items-center gap-2">
-              <img src="/logo.png" alt="ClearHandy" className="h-12 w-auto" />
+              <img src="/logo.png" alt="ClearHandy" className="h-10 w-auto" />
             </a>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center gap-8">
-              <a href="#services" className="text-muted-foreground hover:text-foreground transition-colors">
-                Services
-              </a>
-              <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
-                Contact
-              </a>
-              <a href="tel:+17272223122" className="text-muted-foreground hover:text-foreground transition-colors font-semibold">
-                (727) 222-3122
-              </a>
+              <a href="#services" className="text-muted-foreground hover:text-foreground transition-colors">Services</a>
+              <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">Contact</a>
+              <a href="tel:+17272223122" className="text-muted-foreground hover:text-foreground transition-colors font-semibold">(727) 222-3122</a>
               <Button asChild>
                 <a href="#contact">Get a Free Estimate</a>
               </Button>
             </nav>
 
-            {/* Mobile Navigation - no burger, show phone + CTA */}
+            {/* Mobile - phone + compact CTA */}
             <div className="flex md:hidden items-center gap-2">
-              <a href="tel:+17272223122" className="text-sm font-semibold text-foreground">
-                (727) 222-3122
-              </a>
-              <Button asChild size="sm">
-                <a href="#contact">Estimate</a>
+              <a href="tel:+17272223122" className="text-sm font-bold text-foreground">(727) 222-3122</a>
+              <Button asChild size="sm" className="text-xs px-3">
+                <a href="#contact">Free Estimate</a>
               </Button>
             </div>
           </div>
         </div>
       </header>
 
+      {/* Mobile sticky CTA bar */}
+      <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-primary p-3 flex gap-2">
+        <a href="tel:+17272223122" className="flex-1 bg-white text-primary font-bold text-center py-3 rounded-lg text-sm">
+          📞 Call Now
+        </a>
+        <a href="#contact" className="flex-1 bg-primary-foreground/20 text-white font-bold text-center py-3 rounded-lg text-sm border border-white/30">
+          Get Free Estimate
+        </a>
+      </div>
+
       {/* Hero Section */}
-      <section className="min-h-[calc(100vh-64px)] flex flex-col lg:flex-row overflow-hidden" style={{background: "linear-gradient(135deg, #f5f0eb 0%, #ede8e1 50%, #e8e2d9 100%)"}}>
+      <section className="min-h-[calc(100vh-56px)] flex flex-col lg:flex-row overflow-hidden pb-16 md:pb-0" style={{background: "linear-gradient(135deg, #f5f0eb 0%, #ede8e1 50%, #e8e2d9 100%)"}}>
 
         {/* Left Side - Text Content */}
         <div className="w-full lg:w-[45%] flex flex-col justify-center px-6 lg:px-12 py-8">
 
-          {/* Headline - always on top */}
           <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
             Fix It Right the First Time
             <span className="block">No Delays. No Headaches.</span>
           </h1>
-          <p className="mt-4 text-base md:text-xl lg:text-2xl text-muted-foreground leading-relaxed">
-            Fast. Clean. Reliable. No stress — just results.
+          <p className="mt-3 text-base md:text-xl lg:text-2xl text-muted-foreground">
+            Fast. Clean. Reliable.
           </p>
 
           {/* Mobile: checkmarks left, photo right */}
-          <div className="mt-4 flex flex-row lg:block gap-4">
+          <div className="mt-4 flex flex-row lg:block gap-2">
             <div className="flex flex-col gap-2 text-sm md:text-base text-foreground font-medium flex-1">
-              <span>✔ Reply within an hour</span>
-              <span>✔ Show up on time</span>
-              <span>✔ Respect your home</span>
+              <span>✔ Same-day response</span>
+              <span>✔ On-time arrival</span>
               <span>✔ No hidden fees</span>
             </div>
             {/* Mobile photo - right of checkmarks */}
-            <div className="block lg:hidden w-[45%] flex-shrink-0">
+            <div className="block lg:hidden w-[42%] flex-shrink-0 -mt-2">
               <img
                 src="/ClearHandy.png"
                 alt="Professional handyman"
-                className="w-full h-full object-contain object-bottom"
+                className="w-full h-auto object-contain"
               />
             </div>
           </div>
 
-          <div className="mt-6 flex flex-col sm:flex-row gap-3">
+          {/* Desktop only button + phone */}
+          <div className="hidden md:flex mt-8 flex-col sm:flex-row gap-4">
             <Button size="lg" asChild className="text-base">
               <a href="#contact">Get a Free Estimate</a>
             </Button>
-            <Button size="lg" variant="outline" asChild className="text-base">
-              <a href="#services">View Services →</a>
-            </Button>
           </div>
-          <p className="mt-4 text-base text-muted-foreground">
-            📞 Call or text now: <a href="tel:+17272223122" className="font-semibold text-foreground hover:underline">(727) 222-3122</a>
+          <p className="hidden md:block mt-4 text-base font-bold text-foreground">
+            📞 <a href="tel:+17272223122" className="hover:underline">(727) 222-3122</a>
           </p>
-          <p className="mt-2 text-sm text-muted-foreground">
+          <p className="hidden md:block mt-1 text-sm text-muted-foreground">
+            Serving Clearwater, Tampa & nearby areas
+          </p>
+
+          {/* Mobile only - phone below checkmarks */}
+          <p className="block md:hidden mt-4 text-sm text-muted-foreground">
             Serving Clearwater, Tampa & nearby areas
           </p>
         </div>
