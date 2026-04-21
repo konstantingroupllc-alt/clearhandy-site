@@ -170,31 +170,31 @@ export default function HomePage() {
       <section className="h-[calc(100vh-96px)] flex overflow-hidden" style={{background: "linear-gradient(135deg, #f5f0eb 0%, #ede8e1 50%, #e8e2d9 100%)"}}>
         {/* Left Side - Text Content (45%) */}
         <div className="w-full lg:w-[45%] flex flex-col justify-center px-12 py-8">
-          <h1 className="text-3xl md:text-4xl lg:text-4xl font-bold text-foreground leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-foreground leading-tight">
             Fix It Right the First Time
             <span className="block whitespace-nowrap">No Delays. No Headaches.</span>
           </h1>
-          <p className="mt-6 text-lg md:text-xl text-muted-foreground leading-relaxed">
+          <p className="mt-6 text-xl md:text-2xl text-muted-foreground leading-relaxed">
             Fast. Clean. Reliable. No stress — just results.
           </p>
-          <div className="mt-4 flex flex-col gap-1 text-sm text-foreground font-medium">
+          <div className="mt-4 flex flex-col gap-2 text-base text-foreground font-medium">
             <span>✔ Reply within an hour</span>
             <span>✔ Show up on time</span>
             <span>✔ Respect your home</span>
             <span>✔ No hidden fees</span>
           </div>
-          <div className="mt-6 flex flex-col sm:flex-row gap-4">
-            <Button size="lg" asChild>
+          <div className="mt-8 flex flex-col sm:flex-row gap-4">
+            <Button size="lg" asChild className="text-base px-8 py-4">
               <a href="#contact">Get a Free Estimate</a>
             </Button>
-            <Button size="lg" variant="outline" asChild>
+            <Button size="lg" variant="outline" asChild className="text-base px-8 py-4">
               <a href="#services">View Services →</a>
             </Button>
           </div>
-          <p className="mt-3 text-sm text-muted-foreground">
+          <p className="mt-4 text-base text-muted-foreground">
             📞 Call or text now: <a href="tel:+17272223122" className="font-semibold text-foreground hover:underline">(727) 222-3122</a>
           </p>
-          <p className="mt-2 text-xs text-muted-foreground">
+          <p className="mt-2 text-sm text-muted-foreground">
             Serving Clearwater, Tampa & nearby areas
           </p>
         </div>
