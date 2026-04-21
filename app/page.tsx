@@ -176,7 +176,7 @@ export default function HomePage() {
         {/* Right Side - Single Hero Image (55%) */}
         <div className="hidden lg:block lg:w-[55%] h-full overflow-hidden">
           <img
-            src="/hero.png"
+            src="/ClearHandy.png"
             alt="Professional handyman services"
             className="w-full h-full object-cover"
           />
