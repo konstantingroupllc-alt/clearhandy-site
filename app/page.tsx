@@ -102,7 +102,7 @@ export default function HomePage() {
     <div className="min-h-screen">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/80 border-b border-border">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-6">
           <div className="flex items-center justify-between h-14">
             <a href="#" className="flex items-center gap-2">
               <img src="/logo.png" alt="ClearHandy" className="h-10 w-auto" />
@@ -143,7 +143,7 @@ export default function HomePage() {
       <section className="flex flex-col lg:flex-row lg:min-h-[calc(100vh-56px)] overflow-hidden pb-20 md:pb-0" style={{background: "linear-gradient(135deg, #f5f0eb 0%, #ede8e1 50%, #e8e2d9 100%)"}}>
 
         {/* Left Side - Text Content */}
-        <div className="w-full lg:w-[45%] flex flex-col justify-center px-6 lg:px-12 py-8">
+        <div className="w-full lg:w-[45%] flex flex-col justify-center px-6 py-8">
 
           <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
             Fix It Right the First Time
@@ -195,7 +195,7 @@ export default function HomePage() {
           <img
             src="/ClearHandy.png"
             alt="Professional handyman services"
-            className="w-full h-full object-contain object-bottom"
+            className="w-[85%] h-full object-contain object-bottom ml-auto"
             style={{ transform: `translateY(${scrollY * 0.15}px)`, transition: "transform 0.1s linear" }}
           />
         </div>
