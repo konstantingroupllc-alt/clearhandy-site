@@ -416,7 +416,12 @@ export default function HomePage() {
           </div>
 
           <div className="mt-10 pt-8 border-t border-primary-foreground/20 text-center text-sm text-primary-foreground/60">
-            © 2026 Konstantin Group LLC. All rights reserved.
+            <p>© 2026 Konstantin Group LLC. All rights reserved. ClearHandy is a trade name of Konstantin Group LLC.</p>
+            <p className="mt-2">
+              <a href="/privacy" className="hover:text-primary-foreground transition-colors">Privacy Policy</a>
+              <span className="mx-3">|</span>
+              <a href="/terms" className="hover:text-primary-foreground transition-colors">Terms of Service</a>
+            </p>
           </div>
         </div>
       </footer>
