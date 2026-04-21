@@ -27,49 +27,49 @@ const services = [
     icon: Wrench,
     title: "General Repairs & Maintenance",
     description: "Keeping your home in top shape with reliable, professional repairs.",
-    image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80",
+    image: "/service-repairs.png",
   },
   {
     icon: Package,
     title: "Furniture & Equipment Assembly",
     description: "Quick and accurate assembly of any furniture or equipment.",
-    image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80",
+    image: "/service-assembly.png",
   },
   {
     icon: Tv,
     title: "TV & Media Mounting",
     description: "Secure mounting of TVs, soundbars, and wire concealment.",
-    image: "https://images.unsplash.com/photo-1593359677879-a4bb92f4834e?w=600&q=80",
+    image: "/service-tv.png",
   },
   {
     icon: Lightbulb,
     title: "Lighting & Electrical Fixtures",
     description: "Installation of ceiling fans, chandeliers, and light fixtures.",
-    image: "https://images.unsplash.com/photo-1565814636199-ae8133055c1c?w=600&q=80",
+    image: "/service-lighting.png",
   },
   {
     icon: Droplets,
     title: "Plumbing Fixtures & Kitchen",
     description: "Faucet, sink, toilet, and garbage disposal installation.",
-    image: "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80",
+    image: "/service-plumbing.png",
   },
   {
     icon: Blinds,
     title: "Window Treatments & Blinds",
     description: "Curtain rods, blinds, and window treatment installation.",
-    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=600&q=80",
+    image: "/service-blinds.png",
   },
   {
     icon: Paintbrush,
     title: "Painting & Drywall",
     description: "Interior painting and drywall repair.",
-    image: "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=600&q=80",
+    image: "/service-painting.png",
   },
   {
     icon: Home,
     title: "Home Improvement & Installations",
     description: "Mailbox, washer/dryer, and general home installations.",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
+    image: "/service-home.png",
   },
 ]
 
@@ -207,30 +207,6 @@ export default function HomePage() {
             className="w-full h-full object-contain object-bottom"
             style={{ transform: `translateY(${scrollY * 0.15}px)`, transition: "transform 0.1s linear" }}
           />
-        </div>
-      </section>
-
-      {/* Trust Bar */}
-      <section className="bg-white border-b border-border py-6">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div className="flex flex-col items-center gap-2">
-              <span className="text-2xl">🛡️</span>
-              <span className="font-semibold text-sm text-foreground">Fully Insured</span>
-            </div>
-            <div className="flex flex-col items-center gap-2">
-              <span className="text-2xl">⚡</span>
-              <span className="font-semibold text-sm text-foreground">Same Day Response</span>
-            </div>
-            <div className="flex flex-col items-center gap-2">
-              <span className="text-2xl">⭐</span>
-              <span className="font-semibold text-sm text-foreground">3+ Years Experience</span>
-            </div>
-            <div className="flex flex-col items-center gap-2">
-              <span className="text-2xl">✅</span>
-              <span className="font-semibold text-sm text-foreground">Done Right First Time</span>
-            </div>
-          </div>
         </div>
       </section>
 
