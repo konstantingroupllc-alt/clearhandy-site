@@ -92,12 +92,21 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen">
+      {/* Top Bar with phone */}
+      <div className="bg-primary text-primary-foreground py-2 px-4 text-center text-sm">
+        <a href="tel:+17272223122" className="font-semibold hover:underline">
+          📞 Call or Text: (727) 222-3122
+        </a>
+        <span className="mx-3">|</span>
+        <span>Serving Clearwater, St. Petersburg & Tampa</span>
+      </div>
+
       {/* Header */}
       <header className="sticky top-0 z-50 bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/80 border-b border-border">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
-            <a href="#" className="text-xl font-bold text-foreground">
-              Konstantin Group LLC
+            <a href="#" className="flex items-center gap-2">
+              <img src="/logo.png" alt="ClearHandy" className="h-10 w-auto" />
             </a>
 
             {/* Desktop Navigation */}
@@ -107,6 +116,9 @@ export default function HomePage() {
               </a>
               <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
                 Contact
+              </a>
+              <a href="tel:+17272223122" className="text-muted-foreground hover:text-foreground transition-colors font-semibold">
+                (727) 222-3122
               </a>
               <Button asChild>
                 <a href="#contact">Get a Free Estimate</a>
@@ -140,6 +152,9 @@ export default function HomePage() {
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Contact
+                </a>
+                <a href="tel:+17272223122" className="text-muted-foreground hover:text-foreground transition-colors font-semibold">
+                  (727) 222-3122
                 </a>
                 <Button asChild className="w-fit">
                   <a href="#contact" onClick={() => setMobileMenuOpen(false)}>
@@ -180,6 +195,30 @@ export default function HomePage() {
             alt="Professional handyman services"
             className="w-full h-full object-contain object-bottom"
           />
+        </div>
+      </section>
+
+      {/* Trust Bar */}
+      <section className="bg-white border-b border-border py-6">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div className="flex flex-col items-center gap-2">
+              <span className="text-2xl">🛡️</span>
+              <span className="font-semibold text-sm text-foreground">Fully Insured</span>
+            </div>
+            <div className="flex flex-col items-center gap-2">
+              <span className="text-2xl">⚡</span>
+              <span className="font-semibold text-sm text-foreground">Same Day Response</span>
+            </div>
+            <div className="flex flex-col items-center gap-2">
+              <span className="text-2xl">⭐</span>
+              <span className="font-semibold text-sm text-foreground">3+ Years Experience</span>
+            </div>
+            <div className="flex flex-col items-center gap-2">
+              <span className="text-2xl">✅</span>
+              <span className="font-semibold text-sm text-foreground">Done Right First Time</span>
+            </div>
+          </div>
         </div>
       </section>
 
