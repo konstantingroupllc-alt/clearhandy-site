@@ -159,26 +159,32 @@ export default function HomePage() {
       </header>
 
       {/* Hero Section */}
-      <section className="h-[calc(100vh-64px)] bg-secondary flex overflow-hidden">
+      <section className="h-[calc(100vh-80px)] flex overflow-hidden" style={{background: "linear-gradient(135deg, #f5f0eb 0%, #ede8e1 50%, #e8e2d9 100%)"}}>
         {/* Left Side - Text Content (45%) */}
         <div className="w-full lg:w-[45%] flex flex-col justify-center px-12 py-8">
           <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-foreground leading-tight text-balance">
-            Fix It Right the First Time — Professional Handyman in Tampa Bay
+            Fix It Right the First Time — No Delays, No Headaches
           </h1>
           <p className="mt-6 text-lg md:text-xl text-muted-foreground leading-relaxed">
-            Skip the stress, delays, and poor-quality work. Get fast, clean, and reliable handyman service from a professional who cares about the result.
+            Fast. Clean. Reliable. No stress — just results.
           </p>
           <p className="mt-3 text-base text-muted-foreground leading-relaxed">
             TV mounting, furniture assembly, drywall repair, electrical fixes, and more — done right, on time, and with attention to detail. Serving Clearwater, St. Petersburg, Tampa, and nearby areas.
           </p>
-          <div className="mt-8 flex flex-col sm:flex-row gap-4">
+          <p className="mt-4 text-sm text-foreground font-medium">
+            ✔ Fast response &nbsp;&nbsp; ✔ On-time and reliable &nbsp;&nbsp; ✔ Clean, professional work
+          </p>
+          <div className="mt-6 flex flex-col sm:flex-row gap-4">
             <Button size="lg" asChild>
               <a href="#contact">Get a Free Estimate</a>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <a href="#services">👉 See What I Can Fix</a>
+              <a href="#services">View Services →</a>
             </Button>
           </div>
+          <p className="mt-4 text-sm text-muted-foreground">
+            📞 Call or text: <a href="tel:+17272223122" className="font-semibold text-foreground hover:underline">(727) 222-3122</a>
+          </p>
         </div>
 
         {/* Right Side - Single Hero Image (55%) */}
