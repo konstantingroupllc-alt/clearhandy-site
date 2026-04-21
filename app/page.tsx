@@ -102,7 +102,7 @@ export default function HomePage() {
     <div className="min-h-screen">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/80 border-b border-border">
-        <div className="container mx-auto px-12">
+        <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             <a href="#" className="flex items-center gap-2">
               <img src="/logo.png" alt="ClearHandy" className="h-12 w-auto" />
@@ -124,80 +124,57 @@ export default function HomePage() {
               </Button>
             </nav>
 
-            {/* Mobile Menu Button */}
-            <button
-              className="md:hidden p-2"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              aria-label="Toggle menu"
-            >
-              {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </button>
+            {/* Mobile Navigation - no burger, show phone + CTA */}
+            <div className="flex md:hidden items-center gap-2">
+              <a href="tel:+17272223122" className="text-sm font-semibold text-foreground">
+                (727) 222-3122
+              </a>
+              <Button asChild size="sm">
+                <a href="#contact">Estimate</a>
+              </Button>
+            </div>
           </div>
-
-          {/* Mobile Navigation */}
-          {mobileMenuOpen && (
-            <nav className="md:hidden py-4 border-t border-border">
-              <div className="flex flex-col gap-4">
-                <a
-                  href="#services"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Services
-                </a>
-                <a
-                  href="#contact"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Contact
-                </a>
-                <a href="tel:+17272223122" className="text-muted-foreground hover:text-foreground transition-colors font-semibold">
-                  (727) 222-3122
-                </a>
-                <Button asChild className="w-fit">
-                  <a href="#contact" onClick={() => setMobileMenuOpen(false)}>
-                    Get a Free Estimate
-                  </a>
-                </Button>
-              </div>
-            </nav>
-          )}
         </div>
       </header>
 
       {/* Hero Section */}
       <section className="min-h-[calc(100vh-64px)] flex flex-col lg:flex-row overflow-hidden" style={{background: "linear-gradient(135deg, #f5f0eb 0%, #ede8e1 50%, #e8e2d9 100%)"}}>
 
-        {/* Mobile Photo - shown only on mobile, above text */}
-        <div className="block lg:hidden w-full h-[45vh] overflow-hidden">
-          <img
-            src="/ClearHandy.png"
-            alt="Professional handyman services"
-            className="w-full h-full object-contain object-bottom"
-          />
-        </div>
-
         {/* Left Side - Text Content */}
         <div className="w-full lg:w-[45%] flex flex-col justify-center px-6 lg:px-12 py-8">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+
+          {/* Headline - always on top */}
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
             Fix It Right the First Time
-            <span className="block whitespace-nowrap">No Delays. No Headaches.</span>
+            <span className="block">No Delays. No Headaches.</span>
           </h1>
-          <p className="mt-4 text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed">
+          <p className="mt-4 text-base md:text-xl lg:text-2xl text-muted-foreground leading-relaxed">
             Fast. Clean. Reliable. No stress — just results.
           </p>
-          <div className="mt-4 flex flex-col gap-2 text-base text-foreground font-medium">
-            <span>✔ Reply within an hour</span>
-            <span>✔ Show up on time</span>
-            <span>✔ Respect your home</span>
-            <span>✔ No hidden fees</span>
+
+          {/* Mobile: checkmarks left, photo right */}
+          <div className="mt-4 flex flex-row lg:block gap-4">
+            <div className="flex flex-col gap-2 text-sm md:text-base text-foreground font-medium flex-1">
+              <span>✔ Reply within an hour</span>
+              <span>✔ Show up on time</span>
+              <span>✔ Respect your home</span>
+              <span>✔ No hidden fees</span>
+            </div>
+            {/* Mobile photo - right of checkmarks */}
+            <div className="block lg:hidden w-[45%] flex-shrink-0">
+              <img
+                src="/ClearHandy.png"
+                alt="Professional handyman"
+                className="w-full h-full object-contain object-bottom"
+              />
+            </div>
           </div>
-          <div className="mt-6 flex flex-col sm:flex-row gap-4">
-            <Button size="lg" asChild className="text-base px-8 py-4">
+
+          <div className="mt-6 flex flex-col sm:flex-row gap-3">
+            <Button size="lg" asChild className="text-base">
               <a href="#contact">Get a Free Estimate</a>
             </Button>
-            <Button size="lg" variant="outline" asChild className="text-base px-8 py-4">
+            <Button size="lg" variant="outline" asChild className="text-base">
               <a href="#services">View Services →</a>
             </Button>
           </div>
