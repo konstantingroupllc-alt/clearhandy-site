@@ -143,7 +143,7 @@ export default function HomePage() {
       <section className="flex flex-col lg:flex-row lg:h-[calc(100vh-56px)] overflow-hidden pb-20 md:pb-0" style={{background: "linear-gradient(135deg, #f5f0eb 0%, #ede8e1 50%, #e8e2d9 100%)"}}>
 
         {/* Left Side - Text Content */}
-        <div className="w-full lg:w-[45%] flex flex-col justify-center px-6 py-8">
+        <div className="w-full lg:w-[45%] flex flex-col justify-center px-6 lg:px-16 py-8">
 
           <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
             Fix It Right the First Time
@@ -154,14 +154,14 @@ export default function HomePage() {
           </p>
 
           {/* Mobile: checkmarks left, photo right */}
-          <div className="mt-4 flex flex-row lg:block gap-4">
-            <div className="flex flex-col gap-2 text-sm text-foreground font-medium flex-1 justify-center">
+          <div className="mt-4 flex flex-row lg:block gap-4 items-center">
+            <div className="flex flex-col gap-3 text-sm text-foreground font-medium flex-1">
               <span>✔ Same-day response</span>
               <span>✔ On-time arrival</span>
               <span>✔ No hidden fees</span>
             </div>
-            {/* Mobile photo - right of checkmarks, fixed height */}
-            <div className="block lg:hidden flex-shrink-0" style={{width: '140px', height: '180px', overflow: 'hidden'}}>
+            {/* Mobile photo - right, 3x bigger */}
+            <div className="block lg:hidden flex-shrink-0" style={{width: '45%', maxHeight: '220px', overflow: 'hidden'}}>
               <img
                 src="/ClearHandy.png"
                 alt="Professional handyman"
@@ -183,7 +183,7 @@ export default function HomePage() {
             Serving Clearwater, Tampa & nearby areas
           </p>
 
-          {/* Mobile only - phone below checkmarks */}
+          {/* Mobile only */}
           <p className="block md:hidden mt-4 text-sm text-muted-foreground">
             Serving Clearwater, Tampa & nearby areas
           </p>
