@@ -178,7 +178,7 @@ export default function HomePage() {
           <img
             src="/ClearHandy.png"
             alt="Professional handyman services"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain object-bottom"
           />
         </div>
       </section>
