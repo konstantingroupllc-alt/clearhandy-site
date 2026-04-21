@@ -105,7 +105,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             <a href="#" className="flex items-center gap-2">
-              <img src="/logo.png" alt="ClearHandy" className="h-14 w-auto" />
+              <img src="/logo.png" alt="ClearHandy" className="h-20 w-auto" />
             </a>
 
             {/* Desktop Navigation */}
