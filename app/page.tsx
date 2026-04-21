@@ -102,10 +102,10 @@ export default function HomePage() {
     <div className="min-h-screen">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/80 border-b border-border">
-        <div className="container mx-auto px-6">
-          <div className="flex items-center justify-between h-14">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="flex items-center justify-between h-16">
             <a href="#" className="flex items-center gap-2">
-              <img src="/logo.png" alt="ClearHandy" className="h-10 w-auto" />
+              <img src="/logo.png" alt="ClearHandy" className="h-12 w-auto" />
             </a>
 
             {/* Desktop Navigation */}
@@ -140,7 +140,7 @@ export default function HomePage() {
       </div>
 
       {/* Hero Section */}
-      <section className="flex flex-col lg:flex-row lg:min-h-[calc(100vh-56px)] overflow-hidden pb-20 md:pb-0" style={{background: "linear-gradient(135deg, #f5f0eb 0%, #ede8e1 50%, #e8e2d9 100%)"}}>
+      <section className="flex flex-col lg:flex-row lg:h-[calc(100vh-56px)] overflow-hidden pb-20 md:pb-0" style={{background: "linear-gradient(135deg, #f5f0eb 0%, #ede8e1 50%, #e8e2d9 100%)"}}>
 
         {/* Left Side - Text Content */}
         <div className="w-full lg:w-[45%] flex flex-col justify-center px-6 py-8">
@@ -154,19 +154,18 @@ export default function HomePage() {
           </p>
 
           {/* Mobile: checkmarks left, photo right */}
-          <div className="mt-4 flex flex-row lg:block gap-2 items-start">
-            <div className="flex flex-col gap-2 text-sm md:text-base text-foreground font-medium flex-1">
+          <div className="mt-4 flex flex-row lg:block gap-4">
+            <div className="flex flex-col gap-2 text-sm text-foreground font-medium flex-1 justify-center">
               <span>✔ Same-day response</span>
               <span>✔ On-time arrival</span>
               <span>✔ No hidden fees</span>
             </div>
-            {/* Mobile photo - right of checkmarks, large, cropped to chest */}
-            <div className="block lg:hidden w-[55%] flex-shrink-0 overflow-hidden" style={{maxHeight: '200px'}}>
+            {/* Mobile photo - right of checkmarks, fixed height */}
+            <div className="block lg:hidden flex-shrink-0" style={{width: '140px', height: '180px', overflow: 'hidden'}}>
               <img
                 src="/ClearHandy.png"
                 alt="Professional handyman"
-                className="w-full object-cover object-top"
-                style={{marginLeft: 'auto', display: 'block', transform: 'scale(1.4)', transformOrigin: 'top right'}}
+                className="w-full h-full object-contain object-top"
               />
             </div>
           </div>
@@ -191,12 +190,11 @@ export default function HomePage() {
         </div>
 
         {/* Right Side - Desktop only */}
-        <div className="hidden lg:block lg:w-[55%] h-full overflow-hidden">
+        <div className="hidden lg:flex lg:w-[55%] items-end justify-center overflow-hidden">
           <img
             src="/ClearHandy.png"
             alt="Professional handyman services"
-            className="w-[85%] h-full object-contain object-bottom ml-auto"
-            style={{ transform: `translateY(${scrollY * 0.15}px)`, transition: "transform 0.1s linear" }}
+            className="w-auto max-h-[calc(100vh-64px)] object-contain object-bottom"
           />
         </div>
       </section>
