@@ -167,14 +167,24 @@ export default function HomePage() {
       </header>
 
       {/* Hero Section */}
-      <section className="h-[calc(100vh-96px)] flex overflow-hidden" style={{background: "linear-gradient(135deg, #f5f0eb 0%, #ede8e1 50%, #e8e2d9 100%)"}}>
-        {/* Left Side - Text Content (45%) */}
-        <div className="w-full lg:w-[45%] flex flex-col justify-center px-12 py-8">
-          <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-foreground leading-tight">
+      <section className="min-h-[calc(100vh-64px)] flex flex-col lg:flex-row overflow-hidden" style={{background: "linear-gradient(135deg, #f5f0eb 0%, #ede8e1 50%, #e8e2d9 100%)"}}>
+
+        {/* Mobile Photo - shown only on mobile, above text */}
+        <div className="block lg:hidden w-full h-[45vh] overflow-hidden">
+          <img
+            src="/ClearHandy.png"
+            alt="Professional handyman services"
+            className="w-full h-full object-contain object-bottom"
+          />
+        </div>
+
+        {/* Left Side - Text Content */}
+        <div className="w-full lg:w-[45%] flex flex-col justify-center px-6 lg:px-12 py-8">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
             Fix It Right the First Time
             <span className="block whitespace-nowrap">No Delays. No Headaches.</span>
           </h1>
-          <p className="mt-6 text-xl md:text-2xl text-muted-foreground leading-relaxed">
+          <p className="mt-4 text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed">
             Fast. Clean. Reliable. No stress — just results.
           </p>
           <div className="mt-4 flex flex-col gap-2 text-base text-foreground font-medium">
@@ -183,7 +193,7 @@ export default function HomePage() {
             <span>✔ Respect your home</span>
             <span>✔ No hidden fees</span>
           </div>
-          <div className="mt-8 flex flex-col sm:flex-row gap-4">
+          <div className="mt-6 flex flex-col sm:flex-row gap-4">
             <Button size="lg" asChild className="text-base px-8 py-4">
               <a href="#contact">Get a Free Estimate</a>
             </Button>
@@ -199,7 +209,7 @@ export default function HomePage() {
           </p>
         </div>
 
-        {/* Right Side - Single Hero Image (55%) */}
+        {/* Right Side - Desktop only */}
         <div className="hidden lg:block lg:w-[55%] h-full overflow-hidden">
           <img
             src="/ClearHandy.png"
