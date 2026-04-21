@@ -3,7 +3,7 @@ export default function TermsOfService() {
     <div className="min-h-screen bg-background">
       <header className="border-b border-border py-4 px-8">
         <a href="/" className="flex items-center gap-2">
-          <img src="/logo.png" alt="ClearHandy" className="h-12 w-auto" />
+          <img src="/logo.png" alt="ClearHandy" className="h-16 w-auto" />
         </a>
       </header>
       <main className="container mx-auto px-8 py-16 max-w-3xl">
