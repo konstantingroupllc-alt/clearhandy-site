@@ -102,7 +102,7 @@ export default function HomePage() {
     <div className="min-h-screen">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/80 border-b border-border">
-        <div className="container mx-auto px-4 lg:px-8">
+        <div className="container mx-auto px-6 lg:px-16">
           <div className="flex items-center justify-between h-16">
             <a href="#" className="flex items-center gap-2">
               <img src="/logo.png" alt="ClearHandy" className="h-12 w-auto" />
@@ -145,9 +145,9 @@ export default function HomePage() {
         {/* Left Side - Text Content */}
         <div className="w-full lg:w-[45%] flex flex-col justify-center px-6 lg:px-16 py-8">
 
-          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+          <h1 className="text-2xl md:text-4xl lg:text-4xl xl:text-5xl font-bold text-foreground leading-tight">
             Fix It Right the First Time
-            <span className="block lg:whitespace-nowrap">No Delays. No Headaches.</span>
+            <span className="block">No Delays. No Headaches.</span>
           </h1>
           <p className="mt-3 text-base md:text-xl lg:text-2xl text-muted-foreground">
             Fast. Clean. Reliable.
