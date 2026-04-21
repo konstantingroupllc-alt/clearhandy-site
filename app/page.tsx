@@ -103,9 +103,9 @@ export default function HomePage() {
       {/* Header */}
       <header className="sticky top-0 z-50 bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/80 border-b border-border">
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-20">
             <a href="#" className="flex items-center gap-2">
-              <img src="/logo.png" alt="ClearHandy" className="h-14 w-auto" />
+              <img src="/logo.png" alt="ClearHandy" className="h-16 w-auto" />
             </a>
 
             {/* Desktop Navigation */}
@@ -167,12 +167,12 @@ export default function HomePage() {
       </header>
 
       {/* Hero Section */}
-      <section className="h-[calc(100vh-64px)] flex overflow-hidden" style={{background: "linear-gradient(135deg, #f5f0eb 0%, #ede8e1 50%, #e8e2d9 100%)"}}>
+      <section className="h-[calc(100vh-80px)] flex overflow-hidden" style={{background: "linear-gradient(135deg, #f5f0eb 0%, #ede8e1 50%, #e8e2d9 100%)"}}>
         {/* Left Side - Text Content (45%) */}
         <div className="w-full lg:w-[45%] flex flex-col justify-center px-12 py-8">
-          <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-foreground leading-tight">
+          <h1 className="text-3xl md:text-4xl lg:text-4xl font-bold text-foreground leading-tight">
             Fix It Right the First Time
-            <span className="block">No Delays. No Headaches.</span>
+            <span className="block whitespace-nowrap">No Delays. No Headaches.</span>
           </h1>
           <p className="mt-6 text-lg md:text-xl text-muted-foreground leading-relaxed">
             Fast. Clean. Reliable. No stress — just results.
