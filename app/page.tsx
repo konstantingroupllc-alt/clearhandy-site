@@ -163,18 +163,20 @@ export default function HomePage() {
         {/* Left Side - Text Content (45%) */}
         <div className="w-full lg:w-[45%] flex flex-col justify-center px-12 py-8">
           <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-foreground leading-tight text-balance">
-            Professional Handyman Services in Tampa Bay
+            Fix It Right the First Time — Professional Handyman in Tampa Bay
           </h1>
           <p className="mt-6 text-lg md:text-xl text-muted-foreground leading-relaxed">
-            Quality craftsmanship and reliable service for all your home repair and improvement needs.
-            Serving Clearwater, St. Petersburg, Tampa and surrounding areas.
+            Skip the stress, delays, and poor-quality work. Get fast, clean, and reliable handyman service from a professional who cares about the result.
+          </p>
+          <p className="mt-3 text-base text-muted-foreground leading-relaxed">
+            TV mounting, furniture assembly, drywall repair, electrical fixes, and more — done right, on time, and with attention to detail. Serving Clearwater, St. Petersburg, Tampa, and nearby areas.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <Button size="lg" asChild>
               <a href="#contact">Get a Free Estimate</a>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <a href="#services">View Our Services</a>
+              <a href="#services">👉 See What I Can Fix</a>
             </Button>
           </div>
         </div>
