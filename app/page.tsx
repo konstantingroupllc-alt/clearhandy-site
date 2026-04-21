@@ -92,21 +92,12 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen">
-      {/* Top Bar with phone */}
-      <div className="bg-primary text-primary-foreground py-2 px-4 text-center text-sm">
-        <a href="tel:+17272223122" className="font-semibold hover:underline">
-          📞 Call or Text: (727) 222-3122
-        </a>
-        <span className="mx-3">|</span>
-        <span>Serving Clearwater, St. Petersburg & Tampa</span>
-      </div>
-
       {/* Header */}
       <header className="sticky top-0 z-50 bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/80 border-b border-border">
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-20">
             <a href="#" className="flex items-center gap-2">
-              <img src="/logo.png" alt="ClearHandy" className="h-10 w-auto" />
+              <img src="/logo.png" alt="ClearHandy" className="h-16 w-auto" />
             </a>
 
             {/* Desktop Navigation */}
