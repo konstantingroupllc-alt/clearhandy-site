@@ -73,7 +73,7 @@ const services = [
 
 const benefits = [
   "3+ years of construction experience",
-  "Clean work, respect for your home",
+  "Clean work — respect for your home",
   "Clear scope agreed before work begins",
   "Transparent pricing — no surprises",
 ]
@@ -150,7 +150,6 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
       <header className="sticky top-0 z-50 h-20 border-b border-border bg-white/95 backdrop-blur">
         <div className="mx-auto flex h-full max-w-[1400px] items-center justify-between px-6">
           <a href="#" className="flex items-center">
@@ -192,7 +191,6 @@ export default function HomePage() {
         </div>
       </header>
 
-      {/* Mobile sticky CTA */}
       <div className="fixed bottom-0 left-0 right-0 z-50 flex gap-2 bg-primary p-3 md:hidden">
         <a
           href="tel:+17272223122"
@@ -209,16 +207,13 @@ export default function HomePage() {
         </a>
       </div>
 
-      {/* FIRST SCREEN = hero + features */}
-      <section className="relative flex min-h-[calc(100vh-80px)] flex-col overflow-hidden">
-        {/* Desktop split background */}
+      <section className="relative flex h-[calc(100vh-80px)] max-h-[820px] flex-col overflow-hidden">
         <div className="absolute inset-0 hidden lg:block">
-          <div className="absolute inset-y-0 left-0 w-[42%] bg-[#f4f4f4]" />
+          <div className="absolute inset-y-0 left-0 w-[42%] bg-[#f3f1ee]" />
           <div className="absolute inset-y-0 right-0 w-[58%] bg-[#e9e2d9]" />
         </div>
 
-        {/* Right background image */}
-        <div className="absolute right-0 top-0 h-[calc(100%-164px)] w-full lg:w-[58%]">
+        <div className="absolute right-0 top-0 h-[calc(100%-140px)] w-full lg:w-[58%]">
           <img
             src="/hero-bg.png"
             alt="Home interior"
@@ -227,32 +222,30 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-gradient-to-r from-[#eee7df] via-[#eee7df]/80 to-transparent" />
         </div>
 
-        {/* Top hero content */}
         <div className="relative z-10 flex-1">
-          <div className="mx-auto grid h-full max-w-[1400px] grid-cols-1 lg:grid-cols-[42%_58%] px-6">
-            {/* Left */}
-            <div className="flex items-center py-10 lg:py-6">
-              <div className="max-w-[560px]">
-                <h1 className="text-[52px] font-bold leading-[0.98] tracking-[-0.03em] text-[#081a38] lg:text-[78px]">
+          <div className="mx-auto grid h-full max-w-[1400px] grid-cols-1 px-6 lg:grid-cols-[42%_58%]">
+            <div className="flex items-center py-6 lg:py-2">
+              <div className="max-w-[540px]">
+                <h1 className="text-[46px] font-bold leading-[0.98] tracking-[-0.03em] text-[#081a38] lg:text-[64px] xl:text-[72px]">
                   Fix It Right
                   <br />
                   the First Time
                 </h1>
 
-                <p className="mt-4 text-[28px] font-semibold leading-tight text-[#10254b] lg:text-[30px]">
+                <p className="mt-3 text-[26px] font-semibold text-[#10254b]">
                   No Delays. No Headaches.
                 </p>
 
-                <p className="mt-5 text-[17px] text-gray-600">
-                  Fully insured &nbsp;•&nbsp; Quality-focused work &nbsp;•&nbsp; Fair pricing
+                <p className="mt-4 text-[16px] text-gray-600">
+                  Fully insured &nbsp;•&nbsp; Clean work &nbsp;•&nbsp; Fair pricing
                 </p>
 
-                <div className="mt-7 space-y-3">
+                <div className="mt-5 space-y-2.5">
                   {benefits.map((item) => (
                     <div key={item} className="flex items-center gap-3">
-                      <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-primary">
+                      <div className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-primary">
                         <svg
-                          className="h-4 w-4 text-white"
+                          className="h-3.5 w-3.5 text-white"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -261,68 +254,68 @@ export default function HomePage() {
                           <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
-                      <span className="text-[18px] font-medium text-[#1a2d4d]">{item}</span>
+                      <span className="text-[16px] font-medium text-[#1a2d4d]">{item}</span>
                     </div>
                   ))}
                 </div>
 
-                <div className="mt-7">
-                  <div className="flex items-center gap-3">
-                    <span className="text-[28px] leading-none text-[#f5b400]">★★★★★</span>
-                    <span className="text-[17px] font-semibold text-[#243a5f]">
+                <div className="mt-5">
+                  <div className="flex items-center gap-2">
+                    <span className="text-[24px] text-[#f5b400]">★★★★★</span>
+                    <span className="text-[16px] font-semibold text-[#243a5f]">
                       5.0 rating from local clients
                     </span>
                   </div>
-                  <p className="mt-1 text-[16px] text-gray-600">
+                  <p className="text-[14px] text-gray-600">
                     Trusted by homeowners across Tampa Bay
                   </p>
                 </div>
 
-                <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                  <Button asChild className="h-14 px-8 text-[18px] font-semibold shadow-md">
+                <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+                  <Button asChild className="h-12 px-6 text-[16px] font-semibold shadow-md">
                     <a href="#contact">Get a Free Estimate</a>
                   </Button>
 
                   <a
                     href="tel:+17272223122"
-                    className="flex h-14 items-center justify-center gap-2 rounded-xl border-2 border-gray-300 bg-white px-8 text-[18px] font-semibold text-[#243a5f] transition-colors hover:border-primary hover:text-primary"
+                    className="flex h-12 items-center justify-center gap-2 rounded-xl border-2 border-gray-300 bg-white px-6 text-[16px] font-semibold text-[#243a5f] transition-colors hover:border-primary hover:text-primary"
                   >
-                    <Phone className="h-5 w-5" />
+                    <Phone className="h-4 w-4" />
                     (727) 222-3122
                   </a>
                 </div>
 
-                <p className="mt-6 flex items-center gap-2 text-[15px] text-gray-600">
+                <p className="mt-4 flex items-center gap-2 text-[14px] text-gray-600">
                   <MapPin className="h-4 w-4" />
                   Serving Clearwater, Tampa & nearby areas
                 </p>
               </div>
             </div>
 
-            {/* Right */}
             <div className="relative hidden lg:block">
               <img
                 src="/ClearHandy.png"
                 alt="Professional handyman"
-                className="absolute bottom-0 right-4 max-h-[78vh] w-auto object-contain object-bottom drop-shadow-2xl xl:right-10"
+                className="absolute bottom-0 right-6 max-h-[66vh] w-auto object-contain object-bottom drop-shadow-2xl"
               />
             </div>
           </div>
         </div>
 
-        {/* Features strip INSIDE first screen */}
         <div className="relative z-10 border-t border-gray-200 bg-[#f7f4f0]" id="about">
           <div className="mx-auto max-w-[1400px] px-6">
-            <div className="grid grid-cols-1 gap-8 py-8 md:grid-cols-2 xl:grid-cols-4 xl:gap-0">
-              {featureItems.map((item, index) => (
+            <div className="grid grid-cols-1 gap-6 py-5 md:grid-cols-2 xl:grid-cols-4 xl:gap-0">
+              {featureItems.map((item, i) => (
                 <div
                   key={item.title}
-                  className={`flex items-start gap-4 xl:px-8 ${index !== 0 ? "xl:border-l xl:border-gray-200" : ""}`}
+                  className={`flex items-start gap-4 xl:px-8 ${i !== 0 ? "xl:border-l xl:border-gray-200" : ""}`}
                 >
                   <div className="mt-1 flex-shrink-0 text-primary">{item.icon}</div>
                   <div>
-                    <h3 className="text-[18px] font-semibold text-[#0d2142]">{item.title}</h3>
-                    <p className="mt-2 max-w-[260px] text-[15px] leading-7 text-gray-600">{item.desc}</p>
+                    <h3 className="text-[17px] font-semibold text-[#0d2142]">{item.title}</h3>
+                    <p className="mt-1.5 max-w-[240px] text-[14px] leading-6 text-gray-600">
+                      {item.desc}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -331,7 +324,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Services */}
       <section id="services" className="py-20 md:py-28">
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
@@ -366,7 +358,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Contact */}
       <section id="contact" className="bg-card py-20 md:py-28">
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
@@ -492,7 +483,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="bg-foreground py-12 text-primary-foreground">
         <div className="container mx-auto px-4">
           <div className="grid gap-8 md:grid-cols-3">
