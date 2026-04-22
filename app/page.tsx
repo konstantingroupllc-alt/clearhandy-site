@@ -73,7 +73,7 @@ const services = [
 
 const benefits = [
   "3+ years of construction experience",
-  "Clean work — respect for your home",
+  "Clean work, respect for your home",
   "Clear scope agreed before work begins",
   "Transparent pricing — no surprises",
 ]
@@ -208,31 +208,35 @@ export default function HomePage() {
       </div>
 
       <section className="relative flex h-[calc(100vh-80px)] max-h-[820px] flex-col overflow-hidden">
-        <div className="absolute inset-0 hidden lg:block">
-          <div className="absolute inset-y-0 left-0 w-[42%] bg-[#f3f1ee]" />
-          <div className="absolute inset-y-0 right-0 w-[58%] bg-[#e9e2d9]" />
-        </div>
-
-        <div className="absolute right-0 top-0 h-[calc(100%-140px)] w-full lg:w-[58%]">
+        {/* FULL WIDTH background */}
+        <div className="absolute inset-0">
           <img
             src="/hero-bg.png"
             alt="Home interior"
             className="h-full w-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#eee7df] via-[#eee7df]/80 to-transparent" />
         </div>
+
+        {/* soft overlay to mute full background */}
+        <div className="absolute inset-0 bg-[#eae3da]/70" />
+
+        {/* lighter left reading panel */}
+        <div className="absolute inset-y-0 left-0 hidden w-[43%] bg-[#f4f2ef]/92 lg:block" />
+
+        {/* soft blend to center */}
+        <div className="absolute inset-y-0 left-[35%] hidden w-[22%] bg-gradient-to-r from-[#f4f2ef]/92 via-[#f4f2ef]/45 to-transparent lg:block" />
 
         <div className="relative z-10 flex-1">
           <div className="mx-auto grid h-full max-w-[1400px] grid-cols-1 px-6 lg:grid-cols-[42%_58%]">
             <div className="flex items-center py-6 lg:py-2">
-              <div className="max-w-[540px]">
-                <h1 className="text-[46px] font-bold leading-[0.98] tracking-[-0.03em] text-[#081a38] lg:text-[64px] xl:text-[72px]">
+              <div className="max-w-[520px]">
+                <h1 className="text-[42px] font-bold leading-[0.98] tracking-[-0.03em] text-[#081a38] lg:text-[58px] xl:text-[66px]">
                   Fix It Right
                   <br />
                   the First Time
                 </h1>
 
-                <p className="mt-3 text-[26px] font-semibold text-[#10254b]">
+                <p className="mt-3 text-[24px] font-semibold text-[#10254b]">
                   No Delays. No Headaches.
                 </p>
 
@@ -296,7 +300,7 @@ export default function HomePage() {
               <img
                 src="/ClearHandy.png"
                 alt="Professional handyman"
-                className="absolute bottom-0 right-6 max-h-[66vh] w-auto object-contain object-bottom drop-shadow-2xl"
+                className="absolute bottom-0 right-2 max-h-[74vh] w-auto object-contain object-bottom drop-shadow-2xl xl:right-6"
               />
             </div>
           </div>
