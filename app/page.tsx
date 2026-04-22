@@ -150,15 +150,16 @@ export default function HomePage() {
             <span className="block">No Delays. No Headaches.</span>
           </h1>
           <p className="mt-3 text-base lg:text-xl text-muted-foreground">
-            Fast. Clean. Reliable.
+            Fully insured • Quality-focused work • Fair pricing
           </p>
 
           {/* Mobile: checkmarks left, photo right */}
           <div className="mt-4 flex flex-row lg:block gap-4 items-center">
             <div className="flex flex-col gap-3 text-sm lg:text-base text-foreground font-medium flex-1">
-              <span>✔ Same-day response</span>
-              <span>✔ On-time arrival</span>
-              <span>✔ No hidden fees</span>
+              <span>✔ 3+ years of construction experience</span>
+              <span>✔ Clean work — respect for your home</span>
+              <span>✔ Clear scope agreed before work begins</span>
+              <span>✔ Transparent pricing — no surprises</span>
             </div>
             {/* Mobile photo - larger */}
             <div className="block lg:hidden flex-shrink-0" style={{width: '55%'}}>
@@ -179,13 +180,19 @@ export default function HomePage() {
           <p className="hidden md:block mt-4 text-base font-bold text-foreground">
             📞 <a href="tel:+17272223122" className="hover:underline">(727) 222-3122</a>
           </p>
-          <p className="hidden md:block mt-1 text-sm text-muted-foreground">
-            Serving Clearwater, Tampa & nearby areas
+          <p className="hidden md:block mt-2 text-sm font-semibold text-foreground">
+            ★★★★★ 5.0 rating from local clients
+          </p>
+          <p className="hidden md:block mt-1 text-xs text-muted-foreground">
+            Trusted by homeowners across Tampa Bay
           </p>
 
           {/* Mobile only */}
-          <p className="block md:hidden mt-4 text-sm text-muted-foreground">
-            Serving Clearwater, Tampa & nearby areas
+          <p className="block md:hidden mt-4 text-sm font-semibold text-foreground">
+            ★★★★★ 5.0 rating from local clients
+          </p>
+          <p className="block md:hidden mt-1 text-xs text-muted-foreground">
+            Trusted by homeowners across Tampa Bay
           </p>
         </div>
 
