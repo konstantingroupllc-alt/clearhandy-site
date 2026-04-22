@@ -100,8 +100,8 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen">
-      {/* Header */}
-      <header className="sticky top-0 z-50 bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/80 border-b border-border">
+      {/* Header - transparent over hero */}
+      <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-border">
         <div className="container mx-auto px-6">
           <div className="flex items-center justify-between h-16">
             <a href="#" className="flex items-center gap-2">
@@ -111,98 +111,153 @@ export default function HomePage() {
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center gap-8">
               <a href="#services" className="text-muted-foreground hover:text-foreground transition-colors">Services</a>
+              <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">About</a>
               <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">Contact</a>
-              <a href="tel:+17272223122" className="text-muted-foreground hover:text-foreground transition-colors font-semibold">(727) 222-3122</a>
+              <a href="tel:+17272223122" className="flex items-center gap-2 text-foreground font-semibold hover:text-primary transition-colors">
+                <Phone className="h-4 w-4" /> (727) 222-3122
+              </a>
               <Button asChild>
                 <a href="#contact">Get a Free Estimate</a>
               </Button>
             </nav>
 
-            {/* Mobile - phone + compact CTA */}
+            {/* Mobile */}
             <div className="flex md:hidden items-center gap-2">
-              <a href="tel:+17272223122" className="text-sm font-bold text-foreground">(727) 222-3122</a>
-              <Button asChild size="sm" className="text-xs px-3">
-                <a href="#contact">Free Estimate</a>
+              <Button asChild size="sm">
+                <a href="#contact">Get a Free Estimate</a>
               </Button>
+              <a href="tel:+17272223122" className="p-2">
+                <Phone className="h-5 w-5 text-foreground" />
+              </a>
             </div>
           </div>
         </div>
       </header>
 
       {/* Mobile sticky CTA bar */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-primary p-3 flex gap-2">
-        <a href="tel:+17272223122" className="flex-1 bg-white text-primary font-bold text-center py-3 rounded-lg text-sm">
-          📞 Call Now
+      <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden flex gap-2 p-3 bg-primary">
+        <a href="tel:+17272223122" className="flex-1 flex items-center justify-center gap-2 bg-white text-primary font-bold py-3 rounded-lg text-sm">
+          <Phone className="h-4 w-4" /> Call (727) 222-3122
         </a>
-        <a href="#contact" className="flex-1 bg-primary-foreground/20 text-white font-bold text-center py-3 rounded-lg text-sm border border-white/30">
-          Get Free Estimate
+        <a href="#contact" className="flex-1 flex items-center justify-center gap-2 bg-white/20 text-white font-bold py-3 rounded-lg text-sm border border-white/30">
+          💬 Text Us
         </a>
       </div>
 
       {/* Hero Section */}
-      <section className="flex flex-col lg:flex-row lg:h-[calc(100vh-56px)] overflow-hidden pb-20 md:pb-0" style={{background: "linear-gradient(135deg, #f5f0eb 0%, #ede8e1 50%, #e8e2d9 100%)"}}>
+      <section className="relative overflow-hidden pb-20 md:pb-0">
+        {/* Background image - right side */}
+        <div className="absolute right-0 top-0 w-full md:w-[58%] h-full">
+          <img
+            src="/hero-bg.png"
+            alt="Home interior"
+            className="w-full h-full object-cover object-center"
+          />
+          {/* Gradient overlay on left edge to blend with text area */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#f0ebe3] via-[#f0ebe3]/60 to-transparent" />
+        </div>
 
-        {/* Left Side - Text Content */}
-        <div className="w-full lg:w-[55%] flex flex-col justify-center px-6 py-8">
+        {/* Content */}
+        <div className="relative z-10 container mx-auto px-6">
+          <div className="flex flex-col lg:flex-row min-h-[580px] items-center">
 
-          <h1 className="text-2xl lg:text-4xl xl:text-5xl font-bold text-foreground leading-tight">
-            Fix It Right the First Time
-            <span className="block">No Delays. No Headaches.</span>
-          </h1>
-          <p className="mt-3 text-base lg:text-xl text-muted-foreground">
-            Fully insured • Quality-focused work • Fair pricing
-          </p>
+            {/* Left - Text */}
+            <div className="w-full lg:w-[52%] py-12 lg:py-16">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                Fix It Right<br />the First Time
+              </h1>
+              <p className="mt-2 text-xl md:text-2xl font-semibold text-gray-700">
+                No Delays. No Headaches.
+              </p>
+              <p className="mt-3 text-sm md:text-base text-gray-500">
+                Fully insured &nbsp;•&nbsp; Quality-focused work &nbsp;•&nbsp; Fair pricing
+              </p>
 
-          {/* Mobile: checkmarks left, photo right */}
-          <div className="mt-4 flex flex-row lg:block gap-4 items-center">
-            <div className="flex flex-col gap-3 text-sm lg:text-base text-foreground font-medium flex-1">
-              <span>✔ 3+ years of construction experience</span>
-              <span>✔ Clean work — respect for your home</span>
-              <span>✔ Clear scope agreed before work begins</span>
-              <span>✔ Transparent pricing — no surprises</span>
+              <div className="mt-5 flex flex-col gap-2">
+                {[
+                  "3+ years of construction experience",
+                  "Clean work, respect for your home",
+                  "All steps agreed on paper before we start",
+                  "Transparent pricing — no surprises",
+                ].map((item) => (
+                  <div key={item} className="flex items-center gap-2">
+                    <div className="w-5 h-5 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+                      <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <span className="text-sm md:text-base text-gray-700 font-medium">{item}</span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-4 flex items-center gap-1">
+                <span className="text-yellow-400 text-xl">★★★★★</span>
+                <span className="text-sm font-semibold text-gray-700 ml-1">5.0 rating from local clients</span>
+              </div>
+              <p className="text-xs text-gray-500">Trusted by homeowners across Tampa Bay</p>
+
+              <div className="mt-6 flex flex-col sm:flex-row gap-3">
+                <Button size="lg" asChild className="text-base">
+                  <a href="#contact">Get a Free Estimate</a>
+                </Button>
+                <a href="tel:+17272223122" className="flex items-center justify-center gap-2 px-6 py-3 border-2 border-gray-300 rounded-lg text-base font-semibold text-gray-700 hover:border-primary hover:text-primary transition-colors">
+                  <Phone className="h-4 w-4" /> (727) 222-3122
+                </a>
+              </div>
+
+              <p className="mt-4 text-xs text-gray-500 flex items-center gap-1">
+                <MapPin className="h-3 w-3" /> Serving Clearwater, Tampa &amp; nearby areas
+              </p>
             </div>
-            {/* Mobile photo - larger */}
-            <div className="block lg:hidden flex-shrink-0" style={{width: '55%'}}>
+
+            {/* Right - Photo */}
+            <div className="hidden lg:flex lg:w-[48%] justify-end items-end h-full">
               <img
                 src="/ClearHandy.png"
                 alt="Professional handyman"
-                className="w-full h-auto object-contain"
+                className="max-h-[560px] w-auto object-contain object-bottom"
               />
             </div>
           </div>
-
-          {/* Desktop only button + phone */}
-          <div className="hidden md:flex mt-8 flex-col sm:flex-row gap-4">
-            <Button size="lg" asChild className="text-base">
-              <a href="#contact">Get a Free Estimate</a>
-            </Button>
-          </div>
-          <p className="hidden md:block mt-4 text-base font-bold text-foreground">
-            📞 <a href="tel:+17272223122" className="hover:underline">(727) 222-3122</a>
-          </p>
-          <p className="hidden md:block mt-2 text-sm font-semibold text-foreground">
-            ★★★★★ 5.0 rating from local clients
-          </p>
-          <p className="hidden md:block mt-1 text-xs text-muted-foreground">
-            Trusted by homeowners across Tampa Bay
-          </p>
-
-          {/* Mobile only */}
-          <p className="block md:hidden mt-4 text-sm font-semibold text-foreground">
-            ★★★★★ 5.0 rating from local clients
-          </p>
-          <p className="block md:hidden mt-1 text-xs text-muted-foreground">
-            Trusted by homeowners across Tampa Bay
-          </p>
         </div>
+      </section>
 
-        {/* Right Side - Desktop only */}
-        <div className="hidden lg:flex lg:w-[45%] items-end justify-center overflow-hidden">
-          <img
-            src="/ClearHandy.png"
-            alt="Professional handyman services"
-            className="w-auto max-h-[calc(100vh-64px)] object-contain object-bottom"
-          />
+      {/* Icons block */}
+      <section id="about" className="bg-[#f7f4f0] border-t border-gray-200 py-8">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                icon: <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" /></svg>,
+                title: "Fully Insured",
+                desc: "Your property is protected with full insurance coverage."
+              },
+              {
+                icon: <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" /></svg>,
+                title: "Clean & Respectful",
+                desc: "We keep the workspace clean and treat your home like our own."
+              },
+              {
+                icon: <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" /></svg>,
+                title: "Clear & Agreed",
+                desc: "All steps and scope are agreed on paper before we start."
+              },
+              {
+                icon: <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>,
+                title: "Transparent Pricing",
+                desc: "Fair, upfront pricing with no hidden fees or surprises."
+              },
+            ].map((item) => (
+              <div key={item.title} className="flex gap-4 items-start">
+                <div className="text-primary flex-shrink-0">{item.icon}</div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 text-sm md:text-base">{item.title}</h3>
+                  <p className="text-xs md:text-sm text-gray-500 mt-1">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
