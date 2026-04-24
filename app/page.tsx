@@ -166,8 +166,8 @@ export default function HomePage() {
   }}
 />
           
-         <div className="absolute left-[56%] top-[54%] z-[9] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-  <div className="w-[300px] rounded-3xl bg-white/85 backdrop-blur-2xl shadow-[0_25px_60px_rgba(0,0,0,0.18)] border border-white/70 p-5">
+         <div className="absolute left-[54%] top-[49%] z-[9] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+  <div className="w-[255px] rounded-3xl bg-white/70 backdrop-blur-xl shadow-[0_16px_36px_rgba(0,0,0,0.12)] border border-white/70 p-4">
 
     {/* TOP */}
     <div className="flex items-center gap-4">
