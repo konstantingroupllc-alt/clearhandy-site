@@ -243,8 +243,8 @@ export default function HomePage() {
                   </p>
                 </div>
 
-                <div className="w-[48%] relative pr-[26px]">
-                  <img src="/ClearHandy.png" alt="Professional handyman" className="absolute bottom-[-40px] right-0 w-auto h-[110%] object-contain pointer-events-none" />
+                <div className="w-[48%] flex justify-end items-end h-full pr-[26px]">
+                  <img src="/ClearHandy.png" alt="Professional handyman" className="h-full max-h-[580px] w-auto object-contain object-bottom" />
                 </div>
               </div>
             </div>
