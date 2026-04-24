@@ -156,10 +156,10 @@ export default function HomePage() {
         {/* Hero Section */}
         <section className="relative z-10">
           <div className="container mx-auto px-6">
-            <div className="flex flex-col lg:flex-row min-h-[520px] items-center">
+            <div className="flex flex-col lg:flex-row h-[calc(100vh-64px-88px)] min-h-[400px] max-h-[700px] items-center">
 
               {/* Left — Text */}
-              <div className="w-full lg:w-[52%] py-10 lg:py-12">
+              <div className="w-full lg:w-[52%] py-6">
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
                   Fix It Right<br />the First Time
                 </h1>
@@ -170,7 +170,7 @@ export default function HomePage() {
                   Fully insured &nbsp;•&nbsp; Quality-focused work &nbsp;•&nbsp; Fair pricing
                 </p>
 
-                <div className="mt-5 flex flex-col gap-2">
+                <div className="mt-3 flex flex-col gap-2">
                   {[
                     "3+ years of construction experience",
                     "Clean work, respect for your home",
@@ -188,13 +188,13 @@ export default function HomePage() {
                   ))}
                 </div>
 
-                <div className="mt-4 flex items-center gap-1">
+                <div className="mt-3 flex items-center gap-1">
                   <span className="text-yellow-400 text-xl">★★★★★</span>
                   <span className="text-sm font-semibold text-gray-700 ml-1">5.0 rating from local clients</span>
                 </div>
                 <p className="text-xs text-gray-500">Trusted by homeowners across Tampa Bay</p>
 
-                <div className="mt-6 flex flex-col sm:flex-row gap-3">
+                <div className="mt-4 flex flex-col sm:flex-row gap-3">
                   <Button size="lg" asChild className="text-base">
                     <a href="#contact">Get a Free Estimate</a>
                   </Button>
@@ -213,7 +213,7 @@ export default function HomePage() {
                 <img
                   src="/ClearHandy.png"
                   alt="Professional handyman"
-                  className="max-h-[560px] w-auto object-contain object-bottom"
+                  className="h-full max-h-[580px] w-auto object-contain object-bottom"
                 />
               </div>
 
