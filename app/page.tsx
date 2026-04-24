@@ -156,10 +156,10 @@ export default function HomePage() {
         {/* Hero Section */}
         <section className="relative z-10">
           <div className="container mx-auto px-6">
-            <div className="flex flex-col lg:flex-row min-h-[580px] items-center">
+            <div className="flex flex-col lg:flex-row min-h-[520px] items-center">
 
               {/* Left — Text */}
-              <div className="w-full lg:w-[52%] py-12 lg:py-16">
+              <div className="w-full lg:w-[52%] py-10 lg:py-12">
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
                   Fix It Right<br />the First Time
                 </h1>
@@ -222,9 +222,10 @@ export default function HomePage() {
         </section>
 
         {/* Icons block — shares the same background */}
-        <section id="about" className="relative z-10 py-6">
-          <div className="container mx-auto px-6">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+        <section id="about" className="relative z-10">
+          <div className="bg-white/90 backdrop-blur-sm">
+            <div className="container mx-auto px-6 py-5">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
               {[
                 {
                   icon: (
@@ -271,6 +272,7 @@ export default function HomePage() {
                   </div>
                 </div>
               ))}
+            </div>
             </div>
           </div>
         </section>
