@@ -250,28 +250,75 @@ export default function HomePage() {
             </div>
           </section>
 
-          <section id="about" className="relative z-10">
-            <div className="bg-white/90 backdrop-blur-sm">
-              <div className="container mx-auto px-6 pt-5 pb-7">
-                <div className="grid grid-cols-4 gap-6">
-                  {[
-                    { icon: <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" /></svg>, title: "Fully Insured", desc: "Your property is protected with full insurance coverage." },
-                    { icon: <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" /></svg>, title: "Clean & Respectful", desc: "We keep the workspace clean and treat your home like our own." },
-                    { icon: <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" /></svg>, title: "Clear & Agreed", desc: "All steps and scope are agreed on paper before we start." },
-                    { icon: <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>, title: "Transparent Pricing", desc: "Fair, upfront pricing with no hidden fees or surprises." },
-                  ].map((item) => (
-                    <div key={item.title} className="flex gap-4 items-start">
-                      <div className="text-primary flex-shrink-0">{item.icon}</div>
-                      <div>
-                        <h3 className="font-semibold text-gray-900 text-sm md:text-base">{item.title}</h3>
-                        <p className="text-xs md:text-sm text-gray-600 mt-1">{item.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </section>
+         <section id="about" className="relative z-10 bg-[#f7f4f0]">
+  <div className="max-w-[1200px] mx-auto px-6 py-10">
+    
+    <div className="grid grid-cols-4 gap-6">
+      
+      {/* CARD 1 */}
+      <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 transition hover:-translate-y-1 hover:shadow-md">
+        <div className="flex items-center gap-3 mb-3">
+          <div className="h-11 w-11 flex items-center justify-center rounded-xl bg-green-100">
+            <svg className="w-6 h-6 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+            </svg>
+          </div>
+          <h3 className="font-semibold text-[#0B1F3A]">Fully Insured</h3>
+        </div>
+        <p className="text-sm text-gray-600">
+          Your property is protected with full insurance coverage.
+        </p>
+      </div>
+
+      {/* CARD 2 */}
+      <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 transition hover:-translate-y-1 hover:shadow-md">
+        <div className="flex items-center gap-3 mb-3">
+          <div className="h-11 w-11 flex items-center justify-center rounded-xl bg-green-100">
+            <svg className="w-6 h-6 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12 12 3l9.75 9M4.5 10.5V21h5.25v-5.25h4.5V21h5.25V10.5" />
+            </svg>
+          </div>
+          <h3 className="font-semibold text-[#0B1F3A]">Clean & Respectful</h3>
+        </div>
+        <p className="text-sm text-gray-600">
+          We keep the workspace clean and treat your home like our own.
+        </p>
+      </div>
+
+      {/* CARD 3 */}
+      <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 transition hover:-translate-y-1 hover:shadow-md">
+        <div className="flex items-center gap-3 mb-3">
+          <div className="h-11 w-11 flex items-center justify-center rounded-xl bg-green-100">
+            <svg className="w-6 h-6 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5.25h6M9 12h6m-6 3.75h4.5M7.5 3.75h9A2.25 2.25 0 0 1 18.75 6v12A2.25 2.25 0 0 1 16.5 20.25h-9A2.25 2.25 0 0 1 5.25 18V6A2.25 2.25 0 0 1 7.5 3.75Z" />
+            </svg>
+          </div>
+          <h3 className="font-semibold text-[#0B1F3A]">Clear & Agreed</h3>
+        </div>
+        <p className="text-sm text-gray-600">
+          All steps and scope are agreed on paper before we start.
+        </p>
+      </div>
+
+      {/* CARD 4 */}
+      <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 transition hover:-translate-y-1 hover:shadow-md">
+        <div className="flex items-center gap-3 mb-3">
+          <div className="h-11 w-11 flex items-center justify-center rounded-xl bg-green-100">
+            <svg className="w-6 h-6 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m3-8.25c0-1.24-1.343-2.25-3-2.25s-3 1.01-3 2.25S10.343 12 12 12s3 1.01 3 2.25-1.343 2.25-3 2.25-3-1.01-3-2.25M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+          </div>
+          <h3 className="font-semibold text-[#0B1F3A]">Transparent Pricing</h3>
+        </div>
+        <p className="text-sm text-gray-600">
+          Fair, upfront pricing with no hidden fees or surprises.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
         </div>
       </div>
 
