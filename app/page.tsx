@@ -147,7 +147,7 @@ export default function HomePage() {
           DESKTOP — Hero + Icons (unchanged)
       ════════════════════════════════════════ */}
       <div className="hidden lg:block">
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-visible">
           <div className="absolute inset-0 w-full h-full">
             <img src="/hero-bg.png" alt="" className="w-full h-full object-cover object-[center_75%]" />
           </div>
