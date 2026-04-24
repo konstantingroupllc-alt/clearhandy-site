@@ -151,6 +151,20 @@ export default function HomePage() {
           <div className="absolute inset-0 w-full h-full">
             <img src="/hero-bg.png" alt="" className="w-full h-full object-cover object-[center_75%]" />
           </div>
+          
+          <div
+  className="absolute inset-0 pointer-events-none"
+  style={{
+    background: `linear-gradient(
+      to right,
+      rgba(244, 242, 239, 0.95) 0%,
+      rgba(244, 242, 239, 0.90) 30%,
+      rgba(244, 242, 239, 0.65) 50%,
+      rgba(244, 242, 239, 0.25) 65%,
+      rgba(244, 242, 239, 0.0) 80%
+    )`,
+  }}
+/>
 
           <section className="relative z-10">
             <div className="container mx-auto px-6">
