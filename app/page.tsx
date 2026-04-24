@@ -250,8 +250,8 @@ export default function HomePage() {
             </div>
           </section>
 
-         <section id="about" className="relative z-10 bg-[#f7f4f0]">
-  <div className="max-w-[1200px] mx-auto px-6 pt-3 pb-6 mt-[-60px]">
+         <section id="about" className="relative z-20 bg-[#f7f4f0] -mt-[80px] pt-[80px]">
+  <div className="max-w-[1200px] mx-auto px-6 pt-3 pb-6">
     
     <div className="grid grid-cols-4 gap-6">
       
