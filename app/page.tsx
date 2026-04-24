@@ -166,21 +166,37 @@ export default function HomePage() {
   }}
 />
           
-          <div className="absolute left-[54%] top-[48%] z-[9] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-  <div className="flex items-center gap-3 rounded-2xl bg-white/75 px-5 py-3 shadow-lg backdrop-blur-md border border-white/60">
+         <div className="absolute left-[52%] top-[50%] z-[9] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+  <div className="w-[320px] rounded-3xl bg-[#F4F2EF]/90 backdrop-blur-xl shadow-[0_20px_50px_rgba(0,0,0,0.12)] border border-white/60 p-6">
     
-    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
-      ✔
+    <div className="flex items-center gap-4">
+      
+      <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-green-100">
+        <svg className="h-8 w-8 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+        </svg>
+      </div>
+
+      <div>
+        <p className="text-[26px] font-bold text-[#0B1F3A] leading-tight">
+          100%
+        </p>
+        <p className="text-[16px] font-semibold text-[#0B1F3A] leading-tight">
+          Satisfaction
+        </p>
+        <p className="text-[16px] font-semibold text-[#0B1F3A] leading-tight">
+          Guarantee
+        </p>
+      </div>
+
     </div>
 
-    <div>
-      <p className="text-sm font-bold text-gray-900 leading-tight">
-        Quality Guarantee
-      </p>
-      <p className="text-xs text-gray-600 leading-tight">
-        Done right the first time
-      </p>
-    </div>
+    <div className="my-4 h-px bg-gray-300/60" />
+
+    <p className="text-[14px] text-gray-600 leading-snug">
+      We stand behind our work.<br />
+  Your satisfaction is our priority.
+    </p>
 
   </div>
 </div>
