@@ -156,10 +156,10 @@ export default function HomePage() {
         {/* Hero Section */}
         <section className="relative z-10">
           <div className="container mx-auto px-6">
-            <div className="flex flex-col lg:flex-row h-[calc(100vh-64px-88px)] min-h-[400px] max-h-[700px] items-center">
+            <div className="flex flex-col lg:flex-row h-[calc(100vh-64px-107px)] min-h-[380px] max-h-[700px] items-center">
 
               {/* Left — Text */}
-              <div className="w-full lg:w-[52%] py-4">
+              <div className="w-full lg:w-[52%] py-4 -mt-5">
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
                   Fix It Right<br />the First Time
                 </h1>
@@ -224,7 +224,7 @@ export default function HomePage() {
         {/* Icons block — shares the same background */}
         <section id="about" className="relative z-10">
           <div className="bg-white/90 backdrop-blur-sm">
-            <div className="container mx-auto px-6 py-5 pb-6">
+            <div className="container mx-auto px-6 pt-5 pb-7">
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
               {[
                 {
