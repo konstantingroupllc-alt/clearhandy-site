@@ -159,14 +159,14 @@ export default function HomePage() {
             <div className="flex flex-col lg:flex-row h-[calc(100vh-64px-88px)] min-h-[400px] max-h-[700px] items-center">
 
               {/* Left — Text */}
-              <div className="w-full lg:w-[52%] py-6">
+              <div className="w-full lg:w-[52%] py-4">
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
                   Fix It Right<br />the First Time
                 </h1>
-                <p className="mt-2 text-xl md:text-2xl font-semibold text-gray-700">
+                <p className="mt-1 text-xl md:text-2xl font-semibold text-gray-700">
                   No Delays. No Headaches.
                 </p>
-                <p className="mt-3 text-sm md:text-base text-gray-500">
+                <p className="mt-1 text-sm md:text-base text-gray-500">
                   Fully insured &nbsp;•&nbsp; Quality-focused work &nbsp;•&nbsp; Fair pricing
                 </p>
 
@@ -203,7 +203,7 @@ export default function HomePage() {
                   </a>
                 </div>
 
-                <p className="mt-4 text-xs text-gray-500 flex items-center gap-1">
+                <p className="mt-2 text-xs text-gray-500 flex items-center gap-1">
                   <MapPin className="h-3 w-3" /> Serving Clearwater, Tampa &amp; nearby areas
                 </p>
               </div>
@@ -224,7 +224,7 @@ export default function HomePage() {
         {/* Icons block — shares the same background */}
         <section id="about" className="relative z-10">
           <div className="bg-white/90 backdrop-blur-sm">
-            <div className="container mx-auto px-6 py-5">
+            <div className="container mx-auto px-6 py-5 pb-6">
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
               {[
                 {
