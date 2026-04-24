@@ -165,6 +165,25 @@ export default function HomePage() {
     )`,
   }}
 />
+          
+          <div className="absolute left-[54%] top-[48%] z-[9] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+  <div className="flex items-center gap-3 rounded-2xl bg-white/75 px-5 py-3 shadow-lg backdrop-blur-md border border-white/60">
+    
+    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
+      ✔
+    </div>
+
+    <div>
+      <p className="text-sm font-bold text-gray-900 leading-tight">
+        Quality Guarantee
+      </p>
+      <p className="text-xs text-gray-600 leading-tight">
+        Done right the first time
+      </p>
+    </div>
+
+  </div>
+</div>
 
           <section className="relative z-10">
             <div className="container mx-auto px-6">
