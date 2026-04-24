@@ -152,7 +152,7 @@ export default function HomePage() {
             <img
   src="/hero-bg.png"
   alt=""
-  className="w-full h-full object-cover object-[center_18%]"
+  className="w-full h-full object-cover object-[center_10%]"
 />
           </div>
 
