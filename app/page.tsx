@@ -149,7 +149,7 @@ export default function HomePage() {
       <div className="hidden lg:block">
         <div className="relative overflow-hidden">
           <div className="absolute inset-0 w-full h-full">
-            <img src="/hero-bg.png" alt="" className="w-full h-full object-cover object-[center_18%]" />
+            <img src="/hero-bg.png" alt="" className="w-full h-full object-cover object-[center_5%]" />
           </div>
 
           <section className="relative z-10">
