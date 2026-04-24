@@ -170,7 +170,7 @@ export default function HomePage() {
             <div className="container mx-auto px-6">
               <div className="flex flex-row h-[calc(100vh-64px-107px)] min-h-[380px] max-h-[700px] items-center">
 
-                <div className="w-[52%] py-4 -mt-5">
+                <div className="w-[52%] py-4 -mt-5 pl-[22px]">
                   <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
                     Fix It Right<br />the First Time
                   </h1>
@@ -208,7 +208,7 @@ export default function HomePage() {
                   </p>
                 </div>
 
-                <div className="w-[48%] flex justify-end items-end h-full pr-22">
+                <div className="w-[48%] flex justify-end items-end h-full pr-[22px]">
                   <img src="/ClearHandy.png" alt="Professional handyman" className="h-full max-h-[580px] w-auto object-contain object-bottom" />
                 </div>
               </div>
