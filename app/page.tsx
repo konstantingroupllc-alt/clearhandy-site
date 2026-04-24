@@ -203,7 +203,7 @@ export default function HomePage() {
           
           <section className="relative z-10">
             <div className="container mx-auto px-6">
-              <div className="flex flex-row h-[calc(100vh-64px-107px)] min-h-[380px] max-h-[700px] items-center">
+              <div className="flex flex-row min-h-[720px] h-[90vh] items-end">
 
                 <div className="w-[52%] py-4 -mt-5 pl-[26px]">
                   <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
