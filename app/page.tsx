@@ -146,23 +146,23 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden pb-20 md:pb-0">
-        {/* Background image - right side */}
-        <div className="absolute right-0 top-0 w-full md:w-[58%] h-full">
+        {/* Full width background image */}
+        <div className="absolute inset-0">
           <img
             src="/hero-bg.png"
             alt="Home interior"
             className="w-full h-full object-cover object-center"
           />
-          {/* Gradient overlay on left edge to blend with text area */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#f0ebe3] via-[#f0ebe3]/60 to-transparent" />
+          {/* Gradient overlay left side for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#f0ebe3]/95 via-[#f0ebe3]/75 to-transparent" />
         </div>
 
         {/* Content */}
         <div className="relative z-10 container mx-auto px-6">
-          <div className="flex flex-col lg:flex-row min-h-[580px] items-center">
+          <div className="flex flex-col lg:flex-row lg:min-h-[calc(100vh-64px)] items-stretch">
 
             {/* Left - Text */}
-            <div className="w-full lg:w-[52%] py-12 lg:py-16">
+            <div className="w-full lg:w-[52%] flex flex-col justify-center py-10 lg:py-16">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
                 Fix It Right<br />the First Time
               </h1>
@@ -209,24 +209,40 @@ export default function HomePage() {
               <p className="mt-4 text-xs text-gray-500 flex items-center gap-1">
                 <MapPin className="h-3 w-3" /> Serving Clearwater, Tampa &amp; nearby areas
               </p>
+
+              {/* Icons block - visible in hero without scroll */}
+              <div className="hidden lg:grid grid-cols-4 gap-4 mt-8 pt-6 border-t border-gray-200">
+                {[
+                  { icon: "🛡️", title: "Fully Insured", desc: "Your property is protected." },
+                  { icon: "🏠", title: "Clean & Respectful", desc: "We treat your home like our own." },
+                  { icon: "📋", title: "Clear & Agreed", desc: "Scope agreed before we start." },
+                  { icon: "💵", title: "Transparent Pricing", desc: "No hidden fees or surprises." },
+                ].map((item) => (
+                  <div key={item.title} className="flex flex-col gap-1">
+                    <span className="text-2xl">{item.icon}</span>
+                    <h3 className="font-semibold text-gray-900 text-xs">{item.title}</h3>
+                    <p className="text-xs text-gray-500">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
             </div>
 
-            {/* Right - Photo */}
-            <div className="hidden lg:flex lg:w-[48%] justify-end items-end h-full">
+            {/* Right - Photo aligned to bottom of hero */}
+            <div className="hidden lg:flex lg:w-[48%] justify-end items-end">
               <img
                 src="/ClearHandy.png"
                 alt="Professional handyman"
-                className="max-h-[560px] w-auto object-contain object-bottom"
+                className="h-[calc(100vh-64px)] w-auto object-contain object-bottom"
               />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Icons block */}
-      <section id="about" className="bg-[#f7f4f0] border-t border-gray-200 py-8">
+      {/* Icons block - mobile and full version below hero */}
+      <section id="about" className="bg-[#f7f4f0] border-t border-gray-200 py-8 lg:hidden">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 gap-6">
             {[
               {
                 icon: <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" /></svg>,
