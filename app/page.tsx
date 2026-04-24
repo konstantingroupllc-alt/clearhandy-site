@@ -96,7 +96,7 @@ export default function HomePage() {
           DESKTOP HEADER (lg and above)
       ════════════════════════════════════════ */}
       <header className="hidden lg:block sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-border">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-22">
           <div className="flex items-center justify-between h-16">
             <a href="#"><img src="/logo.png" alt="ClearHandy" className="h-12 w-auto" /></a>
             <nav className="flex items-center gap-8">
