@@ -124,7 +124,7 @@ export default function HomePage() {
           }} />
 
           {/* Satisfaction badge */}
-          <div className="absolute left-[55%] top-[54%] z-[9] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+          <div className="absolute left-[55%] top-[56%] z-[9] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
             <div className="w-[230px] rounded-2xl bg-white/50 backdrop-blur-xl shadow-[0_18px_40px_rgba(0,0,0,0.10)] border border-white/70 p-3">
               <div className="flex items-center gap-2">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
@@ -202,7 +202,7 @@ export default function HomePage() {
           </section>
 
           {/* Feature cards */}
-          <section id="about" className="relative z-20 -mt-[40px]">
+          <section id="about" className="relative z-20 -mt-[35px]">
             <div className="max-w-[1100px] mx-auto px-[60px] pb-6">
               <div className="grid grid-cols-4 gap-4">
                 {[
