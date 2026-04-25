@@ -194,16 +194,15 @@ export default function HomePage() {
               */}
               <div className="flex flex-row h-[calc(100vh-64px-107px)] min-h-[380px] max-h-[700px] items-stretch">
 
-                {/* Left — Text, vertically centered */}
-                <div className="w-[52%] flex items-center pl-[26px]">
+                <div className="w-[52%] flex items-center pl-[80px]">
                   <div className="-mt-5">
-                    <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                    <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
                       Fix It Right<br />the First Time
                     </h1>
-                    <p className="mt-1 text-xl md:text-2xl font-semibold text-gray-700">No Delays. No Headaches.</p>
-                    <p className="mt-1 text-sm md:text-base text-gray-500">Fully insured &nbsp;•&nbsp; Quality-focused work &nbsp;•&nbsp; Fair pricing</p>
+                    <p className="mt-1 text-lg font-semibold text-gray-700">No Delays. No Headaches.</p>
+                    <p className="mt-1 text-sm text-gray-500">Fully insured &nbsp;•&nbsp; Quality-focused work &nbsp;•&nbsp; Fair pricing</p>
 
-                    <div className="mt-3 flex flex-col gap-2">
+                    <div className="mt-3 flex flex-col gap-1.5">
                       {["3+ years of construction experience","Clean work, respect for your home","All steps agreed on paper before we start","Transparent pricing — no surprises"].map((item) => (
                         <div key={item} className="flex items-center gap-2">
                           <div className="w-5 h-5 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
@@ -211,20 +210,20 @@ export default function HomePage() {
                               <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                             </svg>
                           </div>
-                          <span className="text-sm md:text-base text-gray-700 font-medium">{item}</span>
+                          <span className="text-sm text-gray-700 font-medium">{item}</span>
                         </div>
                       ))}
                     </div>
 
-                    <div className="mt-3 flex items-center gap-1">
-                      <span className="text-yellow-400 text-xl">★★★★★</span>
+                    <div className="mt-2 flex items-center gap-1">
+                      <span className="text-yellow-400 text-lg">★★★★★</span>
                       <span className="text-sm font-semibold text-gray-700 ml-1">5.0 rating from local clients</span>
                     </div>
                     <p className="text-xs text-gray-500">Trusted by homeowners across Tampa Bay</p>
 
-                    <div className="mt-4 flex flex-row gap-3">
-                      <Button size="lg" asChild className="text-base"><a href="#contact">Get a Free Estimate</a></Button>
-                      <a href="tel:+17272223122" className="flex items-center justify-center gap-2 px-6 py-3 border-2 border-gray-300 rounded-lg text-base font-semibold text-gray-700 hover:border-primary hover:text-primary transition-colors">
+                    <div className="mt-3 flex flex-row gap-3">
+                      <Button size="default" asChild className="text-sm"><a href="#contact">Get a Free Estimate</a></Button>
+                      <a href="tel:+17272223122" className="flex items-center justify-center gap-2 px-5 py-2 border-2 border-gray-300 rounded-lg text-sm font-semibold text-gray-700 hover:border-primary hover:text-primary transition-colors">
                         <Phone className="h-4 w-4" /> (727) 222-3122
                       </a>
                     </div>
@@ -240,7 +239,7 @@ export default function HomePage() {
                   <img
                     src="/ClearHandy.png"
                     alt="Professional handyman"
-                    className="absolute bottom-0 right-[26px] w-auto h-[calc(100vh-64px)] object-contain object-bottom translate-y-[107px]"
+                    className="absolute bottom-0 right-[26px] w-auto h-[calc(100vh-130px)] object-contain object-bottom translate-y-[107px]"
                   />
                 </div>
 
@@ -517,3 +516,4 @@ export default function HomePage() {
     </div>
   )
 }
+
