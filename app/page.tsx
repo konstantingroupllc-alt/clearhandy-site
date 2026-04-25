@@ -69,16 +69,16 @@ export default function HomePage() {
       {/* ══ DESKTOP HEADER ══ */}
       <header className="hidden lg:block sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-border">
         <div className="max-w-[1400px] mx-auto px-[60px]">
-          <div className="flex items-center justify-between h-16">
-            <a href="#"><img src="/logo.png" alt="ClearHandy" className="h-12 w-auto" /></a>
-            <nav className="flex items-center gap-8">
-              <a href="#services" className="text-muted-foreground hover:text-foreground transition-colors">Services</a>
-              <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">About</a>
-              <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">Contact</a>
-              <a href="tel:+17272223122" className="flex items-center gap-2 text-foreground font-semibold hover:text-primary transition-colors">
-                <Phone className="h-4 w-4" /> (727) 222-3122
+          <div className="flex items-center justify-between h-14">
+            <a href="#"><img src="/logo.png" alt="ClearHandy" className="h-10 w-auto" /></a>
+            <nav className="flex items-center gap-6">
+              <a href="#services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Services</a>
+              <a href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About</a>
+              <a href="#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</a>
+              <a href="tel:+17272223122" className="flex items-center gap-2 text-sm text-foreground font-semibold hover:text-primary transition-colors">
+                <Phone className="h-3.5 w-3.5" /> (727) 222-3122
               </a>
-              <Button asChild><a href="#contact">Get a Free Estimate</a></Button>
+              <Button asChild size="sm"><a href="#contact">Get a Free Estimate</a></Button>
             </nav>
           </div>
         </div>
@@ -126,21 +126,21 @@ export default function HomePage() {
 
           {/* Satisfaction badge */}
           <div className="absolute left-[55%] top-[52%] z-[9] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-            <div className="w-[270px] rounded-3xl bg-white/50 backdrop-blur-xl shadow-[0_18px_40px_rgba(0,0,0,0.10)] border border-white/70 p-4">
-              <div className="flex items-center gap-3">
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10">
-                  <svg className="h-7 w-7 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <div className="w-[230px] rounded-2xl bg-white/50 backdrop-blur-xl shadow-[0_18px_40px_rgba(0,0,0,0.10)] border border-white/70 p-3">
+              <div className="flex items-center gap-2">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
+                  <svg className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
                   </svg>
                 </div>
                 <div>
-                  <p className="text-[22px] font-bold text-[#0B1F3A] leading-tight">100%</p>
-                  <p className="text-[15px] font-semibold text-[#0B1F3A] leading-tight">Satisfaction</p>
-                  <p className="text-[15px] font-semibold text-[#0B1F3A] leading-tight">Guarantee</p>
+                  <p className="text-[18px] font-bold text-[#0B1F3A] leading-tight">100%</p>
+                  <p className="text-[13px] font-semibold text-[#0B1F3A] leading-tight">Satisfaction</p>
+                  <p className="text-[13px] font-semibold text-[#0B1F3A] leading-tight">Guarantee</p>
                 </div>
               </div>
-              <div className="my-3 h-px bg-gray-300/50" />
-              <p className="text-[13px] text-gray-600 leading-snug">We stand behind our work.<br />Your satisfaction is our priority.</p>
+              <div className="my-2 h-px bg-gray-300/50" />
+              <p className="text-[11px] text-gray-600 leading-snug">We stand behind our work.<br />Your satisfaction is our priority.</p>
             </div>
           </div>
 
@@ -151,10 +151,10 @@ export default function HomePage() {
 
                 <div className="w-[52%] flex items-center">
                   <div className="-mt-20">
-                    <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
+                    <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-[1.15]">
                       Fix It Right<br />the First Time
                     </h1>
-                    <p className="mt-1 text-lg font-semibold text-gray-700">No Delays. No Headaches.</p>
+                    <p className="mt-2 text-xl font-semibold text-gray-700">No Delays. No Headaches.</p>
                     <p className="mt-1 text-sm text-gray-500">Fully insured &nbsp;•&nbsp; Quality-focused work &nbsp;•&nbsp; Fair pricing</p>
 
                     <div className="mt-3 flex flex-col gap-1.5">
@@ -212,12 +212,12 @@ export default function HomePage() {
                   { title: "Clear & Agreed", desc: "All steps and scope are agreed on paper before we start.", icon: <svg className="w-6 h-6 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}><path strokeLinecap="round" strokeLinejoin="round" d="M9 5.25h6M9 12h6m-6 3.75h4.5M7.5 3.75h9A2.25 2.25 0 0 1 18.75 6v12A2.25 2.25 0 0 1 16.5 20.25h-9A2.25 2.25 0 0 1 5.25 18V6A2.25 2.25 0 0 1 7.5 3.75Z" /></svg> },
                   { title: "Transparent Pricing", desc: "Fair, upfront pricing with no hidden fees or surprises.", icon: <svg className="w-6 h-6 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m3-8.25c0-1.24-1.343-2.25-3-2.25s-3 1.01-3 2.25S10.343 12 12 12s3 1.01 3 2.25-1.343 2.25-3 2.25-3-1.01-3-2.25M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg> },
                 ].map((card) => (
-                  <div key={card.title} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 transition hover:-translate-y-1 hover:shadow-md">
-                    <div className="flex items-center gap-3 mb-3">
-                      <div className="h-11 w-11 flex items-center justify-center rounded-xl bg-green-100">{card.icon}</div>
-                      <h3 className="font-semibold text-[#0B1F3A]">{card.title}</h3>
+                  <div key={card.title} className="bg-white rounded-xl p-4 shadow-sm border border-gray-100 transition hover:-translate-y-1 hover:shadow-md">
+                    <div className="flex items-center gap-2 mb-2">
+                      <div className="h-9 w-9 flex items-center justify-center rounded-lg bg-green-100">{card.icon}</div>
+                      <h3 className="font-semibold text-[#0B1F3A] text-sm">{card.title}</h3>
                     </div>
-                    <p className="text-sm text-gray-600">{card.desc}</p>
+                    <p className="text-xs text-gray-600">{card.desc}</p>
                   </div>
                 ))}
               </div>
