@@ -254,7 +254,7 @@ export default function HomePage() {
       Fix It Right<br />the First Time
     </h1>
 
-    <p className="mt-1 text-lg font-semibold text-gray-800">
+    <p className="mt-1 text-[16px] min-[390px]:text-lg font-semibold text-gray-800 leading-tight">
       No Delays. No Headaches.
     </p>
 
@@ -269,9 +269,19 @@ export default function HomePage() {
  <div className="absolute left-[18px] top-[82%] z-[5]">
   <div className="inline-block bg-white/65 backdrop-blur-sm rounded-lg px-2 py-1 shadow-sm">
     
-    <div className="text-yellow-500 text-base leading-none drop-shadow-[0_1px_2px_rgba(0,0,0,0.4)]">
-      ★★★★★
-    </div>
+    <div className="flex items-center gap-0.5">
+  {[1, 2, 3, 4, 5].map((star) => (
+    <svg
+      key={star}
+      className="w-4 h-4 text-[#FFC107] drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)]"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+      aria-hidden="true"
+    >
+      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81H7.03a1 1 0 00.95-.69l1.07-3.292z" />
+    </svg>
+  ))}
+</div>
 
     <p className="text-[12px] font-semibold text-gray-900 leading-tight">
       5.0 rating from local clients
