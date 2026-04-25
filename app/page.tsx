@@ -109,7 +109,7 @@ export default function HomePage() {
 
       {/* ══ DESKTOP HERO + CARDS ══ */}
       <div className="hidden lg:block">
-        <div className="relative overflow-visible">
+        <div className="relative overflow-hidden">
 
           <div className="absolute inset-0 w-full h-[calc(100%+160px)]">
             <img src="/hero-bg.png" alt="" className="w-full h-full object-cover object-[center_30%]" />
@@ -193,7 +193,7 @@ export default function HomePage() {
                   <img
                     src="/ClearHandy.png"
                     alt="Professional handyman"
-                    className="absolute bottom-0 right-0 w-auto h-[calc(100vh-64px)] object-contain object-bottom translate-y-[130px]"
+                    className="absolute bottom-0 right-0 w-auto h-[calc(100vh-64px)] object-contain object-bottom translate-y-[60px]"
                   />
                 </div>
 
@@ -201,8 +201,10 @@ export default function HomePage() {
             </div>
           </section>
 
-          {/* Feature cards */}
-          <section id="about" className="relative z-20 -mt-[35px]">
+        </div>
+
+        {/* Feature cards — outside overflow-hidden wrapper so they show fully */}
+        <section id="about" className="relative z-20 -mt-[130px]">
             <div className="max-w-[1100px] mx-auto px-[60px] pb-6">
               <div className="grid grid-cols-4 gap-4">
                 {[
@@ -223,7 +225,6 @@ export default function HomePage() {
             </div>
           </section>
 
-        </div>
       </div>
 
       {/* ══ MOBILE ══ */}
