@@ -188,7 +188,7 @@ export default function HomePage() {
         </div>
 
         <div>
-          <p className="text-[18px] font-bold text-[#0B1F3A] leading-tight">100%</p>
+          <p className="text-[18px] font-bold text-red-500">999%</p>
           <p className="text-[13px] font-semibold text-[#0B1F3A] leading-tight">Satisfaction</p>
           <p className="text-[13px] font-semibold text-[#0B1F3A] leading-tight">Guarantee</p>
         </div>
