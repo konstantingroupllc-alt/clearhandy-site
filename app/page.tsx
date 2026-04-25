@@ -7,18 +7,8 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Field, FieldLabel } from "@/components/ui/field"
 import {
-  Wrench,
-  Package,
-  Tv,
-  Lightbulb,
-  Droplets,
-  Blinds,
-  Paintbrush,
-  Home,
-  Phone,
-  Mail,
-  MapPin,
-  Menu,
+  Wrench, Package, Tv, Lightbulb, Droplets, Blinds, Paintbrush, Home,
+  Phone, Mail, MapPin, Menu,
 } from "lucide-react"
 
 const services = [
@@ -36,38 +26,22 @@ const mobileTrustItems = [
   {
     title: "3+ years of construction experience",
     desc: "Skilled in a wide range of repairs and installations.",
-    icon: (
-      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
-      </svg>
-    ),
+    icon: <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" /></svg>,
   },
   {
     title: "Clean work, respect for your home",
     desc: "We keep the workspace clean and treat your home like our own.",
-    icon: (
-      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-      </svg>
-    ),
+    icon: <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" /></svg>,
   },
   {
     title: "All steps agreed on paper before we start",
     desc: "Clear scope. No changes, no surprises.",
-    icon: (
-      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25z" />
-      </svg>
-    ),
+    icon: <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25z" /></svg>,
   },
   {
     title: "Transparent pricing — no surprises",
     desc: "Fair, upfront pricing. What we agree on is what you pay.",
-    icon: (
-      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
-    ),
+    icon: <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>,
   },
 ]
 
@@ -92,12 +66,9 @@ export default function HomePage() {
   return (
     <div className="min-h-screen">
 
-      {/* ════════════════════════════════════════
-          DESKTOP HEADER
-      ════════════════════════════════════════ */}
+      {/* ══ DESKTOP HEADER ══ */}
       <header className="hidden lg:block sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-border">
-        {/* FIX 2: logo left padding matches text pl-[80px] */}
-        <div className="max-w-[1200px] mx-auto px-[60px]">
+        <div className="max-w-[1400px] mx-auto px-[60px]">
           <div className="flex items-center justify-between h-16">
             <a href="#"><img src="/logo.png" alt="ClearHandy" className="h-12 w-auto" /></a>
             <nav className="flex items-center gap-8">
@@ -113,9 +84,7 @@ export default function HomePage() {
         </div>
       </header>
 
-      {/* ════════════════════════════════════════
-          MOBILE HEADER
-      ════════════════════════════════════════ */}
+      {/* ══ MOBILE HEADER ══ */}
       <header className="lg:hidden sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-border">
         <div className="px-4">
           <div className="flex items-center justify-between h-16">
@@ -138,29 +107,22 @@ export default function HomePage() {
         )}
       </header>
 
-      {/* ════════════════════════════════════════
-          DESKTOP — Hero + Cards
-      ════════════════════════════════════════ */}
+      {/* ══ DESKTOP HERO + CARDS ══ */}
       <div className="hidden lg:block">
         <div className="relative overflow-visible">
 
-          {/* Background */}
           <div className="absolute inset-0 w-full h-full">
             <img src="/hero-bg.png" alt="" className="w-full h-full object-cover object-[center_75%]" />
           </div>
 
-          {/* Gradient */}
-          <div
-            className="absolute inset-0 pointer-events-none"
-            style={{
-              background: `linear-gradient(to right,
-                rgba(244,242,239,0.98) 0%,
-                rgba(244,242,239,0.94) 40%,
-                rgba(244,242,239,0.75) 60%,
-                rgba(244,242,239,0.35) 75%,
-                rgba(244,242,239,0.0) 90%)`,
-            }}
-          />
+          <div className="absolute inset-0 pointer-events-none" style={{
+            background: `linear-gradient(to right,
+              rgba(244,242,239,0.98) 0%,
+              rgba(244,242,239,0.94) 40%,
+              rgba(244,242,239,0.75) 60%,
+              rgba(244,242,239,0.35) 75%,
+              rgba(244,242,239,0.0) 90%)`,
+          }} />
 
           {/* Satisfaction badge */}
           <div className="absolute left-[55%] top-[52%] z-[9] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
@@ -182,13 +144,12 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Hero */}
+          {/* Hero text */}
           <section className="relative z-10">
-            <div className="max-w-[1200px] mx-auto px-0">
+            <div className="max-w-[1400px] mx-auto px-[60px]">
               <div className="flex flex-row h-[calc(100vh-64px-107px)] min-h-[380px] max-h-[700px] items-stretch">
 
-                {/* Left — Text */}
-                <div className="w-[52%] flex items-center pl-[80px]">
+                <div className="w-[52%] flex items-center">
                   <div className="-mt-5">
                     <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
                       Fix It Right<br />the First Time
@@ -228,12 +189,12 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                {/* FIX 1: Photo restored to full viewport height */}
+                {/* Photo */}
                 <div className="w-[48%] relative">
                   <img
                     src="/ClearHandy.png"
                     alt="Professional handyman"
-                    className="absolute bottom-0 right-[26px] w-auto h-[calc(100vh-64px)] object-contain object-bottom translate-y-[107px]"
+                    className="absolute bottom-0 right-0 w-auto h-[calc(100vh-64px)] object-contain object-bottom translate-y-[107px]"
                   />
                 </div>
 
@@ -242,8 +203,8 @@ export default function HomePage() {
           </section>
 
           {/* Feature cards */}
-          <section id="about" className="relative z-20 bg-transparent -mt-[60px]">
-            <div className="max-w-[1200px] mx-auto px-[60px] pb-6">
+          <section id="about" className="relative z-20 -mt-[60px]">
+            <div className="max-w-[1400px] mx-auto px-[60px] pb-6">
               <div className="grid grid-cols-4 gap-6">
                 {[
                   { title: "Fully Insured", desc: "Your property is protected with full insurance coverage.", icon: <svg className="w-6 h-6 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" /></svg> },
@@ -266,9 +227,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* ════════════════════════════════════════
-          MOBILE
-      ════════════════════════════════════════ */}
+      {/* ══ MOBILE ══ */}
       <div className="lg:hidden pb-20">
         <div className="relative overflow-hidden bg-[#f0ebe3]">
           <div className="absolute inset-0 w-full h-full">
@@ -341,9 +300,7 @@ export default function HomePage() {
         </a>
       </div>
 
-      {/* ════════════════════════════════════════
-          FIX 3: SERVICES — max-w with side padding
-      ════════════════════════════════════════ */}
+      {/* ══ SERVICES ══ */}
       <section id="services" className="py-16 md:py-20">
         <div className="max-w-[1400px] mx-auto px-[60px]">
           <div className="text-center mb-10">
@@ -373,9 +330,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ════════════════════════════════════════
-          FIX 4: CONTACT — max-w with side padding, smaller text
-      ════════════════════════════════════════ */}
+      {/* ══ CONTACT ══ */}
       <section id="contact" className="py-16 md:py-20 bg-card">
         <div className="max-w-[1400px] mx-auto px-[60px]">
           <div className="text-center mb-10">
@@ -441,11 +396,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ════════════════════════════════════════
-          FOOTER
-      ════════════════════════════════════════ */}
+      {/* ══ FOOTER ══ */}
       <footer className="py-10 bg-foreground text-primary-foreground">
-        <div className="max-w-[1200px] mx-auto px-[60px]">
+        <div className="max-w-[1400px] mx-auto px-[60px]">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <h3 className="text-lg font-bold mb-3">Konstantin Group LLC</h3>
