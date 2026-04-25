@@ -172,7 +172,7 @@ export default function HomePage() {
 <div className="w-[48%] relative">
   {/* Satisfaction badge */}
   <div
-  className="absolute z-[50] pointer-events-none"
+  className="absolute z-[10] pointer-events-none"
   style={{
     left: "-180px",
     top: "56%",
@@ -188,7 +188,7 @@ export default function HomePage() {
         </div>
 
         <div>
-          <p className="text-[18px] font-bold text-red-500">999%</p>
+          <p className="text-[18px] font-bold">100%</p>
           <p className="text-[13px] font-semibold text-[#0B1F3A] leading-tight">Satisfaction</p>
           <p className="text-[13px] font-semibold text-[#0B1F3A] leading-tight">Guarantee</p>
         </div>
