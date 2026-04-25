@@ -149,11 +149,37 @@ export default function HomePage() {
                       ))}
                     </div>
 
-                    <div className="mt-2 flex items-center gap-1">
-                      <span className="text-yellow-400 text-lg">★★★★★</span>
-                      <span className="text-sm font-semibold text-gray-700 ml-1">5.0 rating from local clients</span>
-                    </div>
-                    <p className="text-xs text-gray-500">Trusted by homeowners across Tampa Bay</p>
+                    <div className="mt-4 mb-3 inline-block bg-white/80 backdrop-blur-sm rounded-xl px-4 py-3 shadow-sm border border-gray-200">
+  
+  <div>
+  <div className="flex items-center gap-1">
+    {[1, 2, 3, 4, 5].map((star) => (
+      <svg
+        key={star}
+        width="18"
+        height="18"
+        viewBox="0 0 20 20"
+        fill="#FFC107"
+        style={{
+          filter: "drop-shadow(0 1px 2px rgba(0,0,0,0.25))",
+        }}
+        aria-hidden="true"
+      >
+        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81H7.03a1 1 0 00.95-.69l1.07-3.292z" />
+      </svg>
+    ))}
+  </div>
+
+  <div className="mt-1 text-lg font-bold text-gray-900">
+    5.0 rating from local clients
+  </div>
+</div>
+
+  <p className="text-sm text-gray-600">
+    Trusted by homeowners in Tampa Bay
+  </p>
+
+</div>
 
                     <div className="mt-3 flex flex-row gap-3">
                       <Button size="default" asChild className="text-sm"><a href="#contact">Get a Free Estimate</a></Button>
@@ -161,10 +187,7 @@ export default function HomePage() {
                         <Phone className="h-4 w-4" /> (727) 222-3122
                       </a>
                     </div>
-
-                    <p className="mt-2 text-xs text-gray-500 flex items-center gap-1">
-                      <MapPin className="h-3 w-3" /> Serving Clearwater, Tampa &amp; nearby areas
-                    </p>
+                    
                   </div>
                 </div>
 
