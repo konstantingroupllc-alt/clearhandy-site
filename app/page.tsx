@@ -97,7 +97,7 @@ export default function HomePage() {
       ════════════════════════════════════════ */}
       <header className="hidden lg:block sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-border">
         {/* FIX 2: logo left padding matches text pl-[80px] */}
-        <div className="max-w-[1200px] mx-auto px-[80px]">
+        <div className="max-w-[1200px] mx-auto px-[60px]">
           <div className="flex items-center justify-between h-16">
             <a href="#"><img src="/logo.png" alt="ClearHandy" className="h-12 w-auto" /></a>
             <nav className="flex items-center gap-8">
@@ -243,7 +243,7 @@ export default function HomePage() {
 
           {/* Feature cards */}
           <section id="about" className="relative z-20 bg-transparent -mt-[60px]">
-            <div className="max-w-[1200px] mx-auto px-[80px] pb-6">
+            <div className="max-w-[1200px] mx-auto px-[60px] pb-6">
               <div className="grid grid-cols-4 gap-6">
                 {[
                   { title: "Fully Insured", desc: "Your property is protected with full insurance coverage.", icon: <svg className="w-6 h-6 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" /></svg> },
@@ -345,7 +345,7 @@ export default function HomePage() {
           FIX 3: SERVICES — max-w with side padding
       ════════════════════════════════════════ */}
       <section id="services" className="py-16 md:py-20">
-        <div className="max-w-[1200px] mx-auto px-[80px]">
+        <div className="max-w-[1400px] mx-auto px-[60px]">
           <div className="text-center mb-10">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground">Our Services</h2>
             <p className="mt-3 text-muted-foreground max-w-2xl mx-auto text-sm">
@@ -377,7 +377,7 @@ export default function HomePage() {
           FIX 4: CONTACT — max-w with side padding, smaller text
       ════════════════════════════════════════ */}
       <section id="contact" className="py-16 md:py-20 bg-card">
-        <div className="max-w-[1200px] mx-auto px-[80px]">
+        <div className="max-w-[1400px] mx-auto px-[60px]">
           <div className="text-center mb-10">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground">Contact Us</h2>
             <p className="mt-3 text-muted-foreground max-w-2xl mx-auto text-sm">Ready to start your project? Get in touch for a free estimate.</p>
@@ -445,7 +445,7 @@ export default function HomePage() {
           FOOTER
       ════════════════════════════════════════ */}
       <footer className="py-10 bg-foreground text-primary-foreground">
-        <div className="max-w-[1200px] mx-auto px-[80px]">
+        <div className="max-w-[1200px] mx-auto px-[60px]">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <h3 className="text-lg font-bold mb-3">Konstantin Group LLC</h3>
