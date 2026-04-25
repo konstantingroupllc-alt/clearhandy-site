@@ -123,11 +123,7 @@ export default function HomePage() {
               <a href="#contact" className="bg-primary text-white text-sm font-semibold px-4 py-2 rounded-lg">
                 Get a Free Estimate
               </a>
-              <button
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="p-2 text-gray-700"
-                aria-label="Menu"
-              >
+              <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="p-2 text-gray-700" aria-label="Menu">
                 <Menu className="h-6 w-6" />
               </button>
             </div>
@@ -144,185 +140,156 @@ export default function HomePage() {
       </header>
 
       {/* ════════════════════════════════════════
-          DESKTOP — Hero + Icons (unchanged)
+          DESKTOP — Hero + Icons
       ════════════════════════════════════════ */}
       <div className="hidden lg:block">
         <div className="relative overflow-visible">
+
+          {/* Background */}
           <div className="absolute inset-0 w-full h-full">
             <img src="/hero-bg.png" alt="" className="w-full h-full object-cover object-[center_75%]" />
           </div>
-          
+
+          {/* Gradient overlay */}
           <div
-  className="absolute inset-0 pointer-events-none"
-  style={{
-    background: `linear-gradient(
-      to right,
-      rgba(244, 242, 239, 0.98) 0%,
-      rgba(244, 242, 239, 0.94) 40%,
-      rgba(244, 242, 239, 0.75) 60%,
-      rgba(244, 242, 239, 0.35) 75%,
-      rgba(244, 242, 239, 0.0) 90%
-    )`,
-  }}
-/>
-          
-         <div className="absolute left-[55%] top-[52%] z-[9] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-  <div className="w-[270px] rounded-3xl bg-white/50 backdrop-blur-xl shadow-[0_18px_40px_rgba(0,0,0,0.10)] border border-white/70 p-4 transition duration-300 hover:scale-[1.02]">
-    
-    <div className="flex items-center gap-3">
-      
-      <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10">
-        <svg className="h-7 w-7 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
-        </svg>
-      </div>
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background: `linear-gradient(
+                to right,
+                rgba(244, 242, 239, 0.98) 0%,
+                rgba(244, 242, 239, 0.94) 40%,
+                rgba(244, 242, 239, 0.75) 60%,
+                rgba(244, 242, 239, 0.35) 75%,
+                rgba(244, 242, 239, 0.0) 90%
+              )`,
+            }}
+          />
 
-      <div>
-        <p className="text-[22px] font-bold text-[#0B1F3A] leading-tight">
-          100%
-        </p>
-        <p className="text-[15px] font-semibold text-[#0B1F3A] leading-tight">
-          Satisfaction
-        </p>
-        <p className="text-[15px] font-semibold text-[#0B1F3A] leading-tight">
-          Guarantee
-        </p>
-      </div>
+          {/* Satisfaction badge */}
+          <div className="absolute left-[55%] top-[52%] z-[9] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+            <div className="w-[270px] rounded-3xl bg-white/50 backdrop-blur-xl shadow-[0_18px_40px_rgba(0,0,0,0.10)] border border-white/70 p-4 transition duration-300 hover:scale-[1.02]">
+              <div className="flex items-center gap-3">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10">
+                  <svg className="h-7 w-7 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-[22px] font-bold text-[#0B1F3A] leading-tight">100%</p>
+                  <p className="text-[15px] font-semibold text-[#0B1F3A] leading-tight">Satisfaction</p>
+                  <p className="text-[15px] font-semibold text-[#0B1F3A] leading-tight">Guarantee</p>
+                </div>
+              </div>
+              <div className="my-3 h-px bg-gray-300/50" />
+              <p className="text-[13px] text-gray-600 leading-snug">
+                We stand behind our work.<br />Your satisfaction is our priority.
+              </p>
+            </div>
+          </div>
 
-    </div>
-
-    <div className="my-3 h-px bg-gray-300/50" />
-
-    <p className="text-[13px] text-gray-600 leading-snug">
-      We stand behind our work.<br />
-      Your satisfaction is our priority.
-    </p>
-
-  </div>
-</div>
-          
+          {/* Hero content */}
           <section className="relative z-10">
             <div className="container mx-auto px-6">
-              <div className="flex flex-row h-[calc(100vh-64px-107px)] min-h-[380px] max-h-[700px] items-center">
+              {/* 
+                Key fix: hero row has overflow-hidden so the photo stays clipped at bottom.
+                Photo uses h-full + object-bottom so it anchors to the bottom of the row.
+              */}
+              <div className="flex flex-row h-[calc(100vh-64px-107px)] min-h-[380px] max-h-[700px] items-stretch overflow-hidden">
 
-                <div className="w-[52%] py-4 -mt-5 pl-[26px]">
-                  <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                    Fix It Right<br />the First Time
-                  </h1>
-                  <p className="mt-1 text-xl md:text-2xl font-semibold text-gray-700">No Delays. No Headaches.</p>
-                  <p className="mt-1 text-sm md:text-base text-gray-500">Fully insured &nbsp;•&nbsp; Quality-focused work &nbsp;•&nbsp; Fair pricing</p>
+                {/* Left — Text, vertically centered */}
+                <div className="w-[52%] flex items-center pl-[26px]">
+                  <div className="-mt-5">
+                    <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                      Fix It Right<br />the First Time
+                    </h1>
+                    <p className="mt-1 text-xl md:text-2xl font-semibold text-gray-700">No Delays. No Headaches.</p>
+                    <p className="mt-1 text-sm md:text-base text-gray-500">Fully insured &nbsp;•&nbsp; Quality-focused work &nbsp;•&nbsp; Fair pricing</p>
 
-                  <div className="mt-3 flex flex-col gap-2">
-                    {["3+ years of construction experience","Clean work, respect for your home","All steps agreed on paper before we start","Transparent pricing — no surprises"].map((item) => (
-                      <div key={item} className="flex items-center gap-2">
-                        <div className="w-5 h-5 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
-                          <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                          </svg>
+                    <div className="mt-3 flex flex-col gap-2">
+                      {["3+ years of construction experience","Clean work, respect for your home","All steps agreed on paper before we start","Transparent pricing — no surprises"].map((item) => (
+                        <div key={item} className="flex items-center gap-2">
+                          <div className="w-5 h-5 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+                            <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                          </div>
+                          <span className="text-sm md:text-base text-gray-700 font-medium">{item}</span>
                         </div>
-                        <span className="text-sm md:text-base text-gray-700 font-medium">{item}</span>
-                      </div>
-                    ))}
-                  </div>
+                      ))}
+                    </div>
 
-                  <div className="mt-3 flex items-center gap-1">
-                    <span className="text-yellow-400 text-xl">★★★★★</span>
-                    <span className="text-sm font-semibold text-gray-700 ml-1">5.0 rating from local clients</span>
-                  </div>
-                  <p className="text-xs text-gray-500">Trusted by homeowners across Tampa Bay</p>
+                    <div className="mt-3 flex items-center gap-1">
+                      <span className="text-yellow-400 text-xl">★★★★★</span>
+                      <span className="text-sm font-semibold text-gray-700 ml-1">5.0 rating from local clients</span>
+                    </div>
+                    <p className="text-xs text-gray-500">Trusted by homeowners across Tampa Bay</p>
 
-                  <div className="mt-4 flex flex-row gap-3">
-                    <Button size="lg" asChild className="text-base"><a href="#contact">Get a Free Estimate</a></Button>
-                    <a href="tel:+17272223122" className="flex items-center justify-center gap-2 px-6 py-3 border-2 border-gray-300 rounded-lg text-base font-semibold text-gray-700 hover:border-primary hover:text-primary transition-colors">
-                      <Phone className="h-4 w-4" /> (727) 222-3122
-                    </a>
-                  </div>
+                    <div className="mt-4 flex flex-row gap-3">
+                      <Button size="lg" asChild className="text-base"><a href="#contact">Get a Free Estimate</a></Button>
+                      <a href="tel:+17272223122" className="flex items-center justify-center gap-2 px-6 py-3 border-2 border-gray-300 rounded-lg text-base font-semibold text-gray-700 hover:border-primary hover:text-primary transition-colors">
+                        <Phone className="h-4 w-4" /> (727) 222-3122
+                      </a>
+                    </div>
 
-                  <p className="mt-2 text-xs text-gray-500 flex items-center gap-1">
-                    <MapPin className="h-3 w-3" /> Serving Clearwater, Tampa &amp; nearby areas
-                  </p>
+                    <p className="mt-2 text-xs text-gray-500 flex items-center gap-1">
+                      <MapPin className="h-3 w-3" /> Serving Clearwater, Tampa &amp; nearby areas
+                    </p>
+                  </div>
                 </div>
 
-                <div className="w-[48%] flex justify-end items-end h-full pr-[26px] relative z-10">
-  <img
-    src="/ClearHandy.png"
-    alt="Professional handyman"
-    className="h-[700px] w-auto object-contain object-bottom translate-y-[75px]"
-  />
-</div>
+                {/* Right — Photo pinned to bottom of hero row */}
+                <div className="w-[48%] flex items-end justify-end pr-[26px]">
+                  <img
+                    src="/ClearHandy.png"
+                    alt="Professional handyman"
+                    className="h-full w-auto object-contain object-bottom"
+                  />
+                </div>
+
               </div>
             </div>
           </section>
 
-         <section id="about" className="relative z-20 bg-transparent -mt-[60px]">
-  <div className="max-w-[1200px] mx-auto px-6 pt-0 pb-6">
-    
-    <div className="grid grid-cols-4 gap-6">
-      
-      {/* CARD 1 */}
-      <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 transition hover:-translate-y-1 hover:shadow-md">
-        <div className="flex items-center gap-3 mb-3">
-          <div className="h-11 w-11 flex items-center justify-center rounded-xl bg-green-100">
-            <svg className="w-6 h-6 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
-            </svg>
-          </div>
-          <h3 className="font-semibold text-[#0B1F3A]">Fully Insured</h3>
-        </div>
-        <p className="text-sm text-gray-600">
-          Your property is protected with full insurance coverage.
-        </p>
-      </div>
+          {/* Feature cards */}
+          <section id="about" className="relative z-20 bg-transparent -mt-[60px]">
+            <div className="max-w-[1200px] mx-auto px-6 pt-0 pb-6">
+              <div className="grid grid-cols-4 gap-6">
+                {[
+                  {
+                    title: "Fully Insured",
+                    desc: "Your property is protected with full insurance coverage.",
+                    icon: <svg className="w-6 h-6 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" /></svg>,
+                  },
+                  {
+                    title: "Clean & Respectful",
+                    desc: "We keep the workspace clean and treat your home like our own.",
+                    icon: <svg className="w-6 h-6 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12 12 3l9.75 9M4.5 10.5V21h5.25v-5.25h4.5V21h5.25V10.5" /></svg>,
+                  },
+                  {
+                    title: "Clear & Agreed",
+                    desc: "All steps and scope are agreed on paper before we start.",
+                    icon: <svg className="w-6 h-6 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}><path strokeLinecap="round" strokeLinejoin="round" d="M9 5.25h6M9 12h6m-6 3.75h4.5M7.5 3.75h9A2.25 2.25 0 0 1 18.75 6v12A2.25 2.25 0 0 1 16.5 20.25h-9A2.25 2.25 0 0 1 5.25 18V6A2.25 2.25 0 0 1 7.5 3.75Z" /></svg>,
+                  },
+                  {
+                    title: "Transparent Pricing",
+                    desc: "Fair, upfront pricing with no hidden fees or surprises.",
+                    icon: <svg className="w-6 h-6 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m3-8.25c0-1.24-1.343-2.25-3-2.25s-3 1.01-3 2.25S10.343 12 12 12s3 1.01 3 2.25-1.343 2.25-3 2.25-3-1.01-3-2.25M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>,
+                  },
+                ].map((card) => (
+                  <div key={card.title} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 transition hover:-translate-y-1 hover:shadow-md">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="h-11 w-11 flex items-center justify-center rounded-xl bg-green-100">
+                        {card.icon}
+                      </div>
+                      <h3 className="font-semibold text-[#0B1F3A]">{card.title}</h3>
+                    </div>
+                    <p className="text-sm text-gray-600">{card.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
 
-      {/* CARD 2 */}
-      <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 transition hover:-translate-y-1 hover:shadow-md">
-        <div className="flex items-center gap-3 mb-3">
-          <div className="h-11 w-11 flex items-center justify-center rounded-xl bg-green-100">
-            <svg className="w-6 h-6 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12 12 3l9.75 9M4.5 10.5V21h5.25v-5.25h4.5V21h5.25V10.5" />
-            </svg>
-          </div>
-          <h3 className="font-semibold text-[#0B1F3A]">Clean & Respectful</h3>
-        </div>
-        <p className="text-sm text-gray-600">
-          We keep the workspace clean and treat your home like our own.
-        </p>
-      </div>
-
-      {/* CARD 3 */}
-      <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 transition hover:-translate-y-1 hover:shadow-md">
-        <div className="flex items-center gap-3 mb-3">
-          <div className="h-11 w-11 flex items-center justify-center rounded-xl bg-green-100">
-            <svg className="w-6 h-6 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5.25h6M9 12h6m-6 3.75h4.5M7.5 3.75h9A2.25 2.25 0 0 1 18.75 6v12A2.25 2.25 0 0 1 16.5 20.25h-9A2.25 2.25 0 0 1 5.25 18V6A2.25 2.25 0 0 1 7.5 3.75Z" />
-            </svg>
-          </div>
-          <h3 className="font-semibold text-[#0B1F3A]">Clear & Agreed</h3>
-        </div>
-        <p className="text-sm text-gray-600">
-          All steps and scope are agreed on paper before we start.
-        </p>
-      </div>
-
-      {/* CARD 4 */}
-      <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 transition hover:-translate-y-1 hover:shadow-md">
-        <div className="flex items-center gap-3 mb-3">
-          <div className="h-11 w-11 flex items-center justify-center rounded-xl bg-green-100">
-            <svg className="w-6 h-6 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m3-8.25c0-1.24-1.343-2.25-3-2.25s-3 1.01-3 2.25S10.343 12 12 12s3 1.01 3 2.25-1.343 2.25-3 2.25-3-1.01-3-2.25M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-            </svg>
-          </div>
-          <h3 className="font-semibold text-[#0B1F3A]">Transparent Pricing</h3>
-        </div>
-        <p className="text-sm text-gray-600">
-          Fair, upfront pricing with no hidden fees or surprises.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
         </div>
       </div>
 
@@ -333,14 +300,11 @@ export default function HomePage() {
 
         {/* Mobile Hero */}
         <div className="relative overflow-hidden bg-[#f0ebe3]">
-          {/* Faded background */}
           <div className="absolute inset-0 w-full h-full">
             <img src="/hero-bg.png" alt="" className="w-full h-full object-cover object-center opacity-40" />
           </div>
 
-          {/* Content row: text left, photo right */}
           <div className="relative z-10 flex items-end min-h-[340px]">
-            {/* Text */}
             <div className="flex-1 px-5 pt-6 pb-6">
               <h1 className="text-3xl font-bold text-gray-900 leading-tight">
                 Fix It Right<br />the First Time
@@ -362,13 +326,8 @@ export default function HomePage() {
               </p>
             </div>
 
-            {/* Handyman photo — right side, overlaps hero */}
             <div className="flex-shrink-0 w-[48%] flex items-end justify-end">
-              <img
-                src="/ClearHandy.png"
-                alt="Professional handyman"
-                className="w-full object-contain object-bottom max-h-[320px]"
-              />
+              <img src="/ClearHandy.png" alt="Professional handyman" className="w-full object-contain object-bottom max-h-[320px]" />
             </div>
           </div>
         </div>
@@ -399,7 +358,6 @@ export default function HomePage() {
             <p className="text-xs text-gray-500">Trusted by homeowners in Tampa Bay</p>
           </div>
           <div className="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2">
-            {/* Google G logo in SVG */}
             <svg className="w-7 h-7" viewBox="0 0 48 48">
               <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
               <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
@@ -425,7 +383,7 @@ export default function HomePage() {
       </div>
 
       {/* ════════════════════════════════════════
-          SERVICES (shared desktop + mobile)
+          SERVICES
       ════════════════════════════════════════ */}
       <section id="services" className="py-20 md:py-28">
         <div className="container mx-auto px-4">
@@ -457,7 +415,7 @@ export default function HomePage() {
       </section>
 
       {/* ════════════════════════════════════════
-          CONTACT (shared)
+          CONTACT
       ════════════════════════════════════════ */}
       <section id="contact" className="py-20 md:py-28 bg-card">
         <div className="container mx-auto px-4">
@@ -525,7 +483,7 @@ export default function HomePage() {
       </section>
 
       {/* ════════════════════════════════════════
-          FOOTER (shared)
+          FOOTER
       ════════════════════════════════════════ */}
       <footer className="py-12 bg-foreground text-primary-foreground">
         <div className="container mx-auto px-4">
