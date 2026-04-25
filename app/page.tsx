@@ -111,10 +111,10 @@ export default function HomePage() {
       <div className="hidden lg:block">
         <div className="relative overflow-visible h-[calc(100vh-58px)]">
 
-          <div className="absolute inset-0 w-full h-full">
+          <div className="absolute inset-0 w-full h-full z-0">
             <img src="/hero-bg.png" alt="" className="w-full h-full object-cover object-[center_55%]" />
           </div>
-          <div className="absolute inset-0 w-full h-full pointer-events-none" style={{
+          <div className="absolute inset-0 w-full h-full z-[1] pointer-events-none" style={{
             background: `linear-gradient(to right,
               rgba(244,242,239,0.98) 0%,
               rgba(244,242,239,0.94) 40%,
@@ -125,10 +125,11 @@ export default function HomePage() {
 
           {/* Satisfaction badge */}
           <div
-  className="absolute z-[5] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+  className="absolute pointer-events-none z-[15]"
   style={{
-    left: "calc(51% - 40px)",
+    left: "calc(50% + 40px)", // двигаем вправо
     top: "56%",
+    transform: "translate(-50%, -50%)",
   }}>
             <div className="w-[230px] rounded-2xl bg-white/50 backdrop-blur-xl shadow-[0_18px_40px_rgba(0,0,0,0.10)] border border-white/70 p-3">
               <div className="flex items-center gap-2">
@@ -196,9 +197,9 @@ export default function HomePage() {
                 {/* Photo */}
                 <div className="w-[48%] relative">
                   <img
-                    src="/ClearHandy.png"
-                    alt="Professional handyman"
-                    className="absolute bottom-0 right-0 w-auto h-[calc(100vh-58px)] object-contain object-bottom translate-y-[0]"
+    src="/ClearHandy.png"
+    alt="Professional handyman"
+    className="absolute bottom-0 right-0 w-auto h-[calc(100vh-58px)] object-contain object-bottom translate-y-[0]"
                   />
                 </div>
 
