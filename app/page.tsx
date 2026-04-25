@@ -127,7 +127,7 @@ export default function HomePage() {
           <div
   className="absolute pointer-events-none z-[15]"
   style={{
-    left: "calc(50% + 40px)", // двигаем вправо
+    left: "calc(50% + 70px)", // двигаем вправо
     top: "56%",
     transform: "translate(-50%, -50%)",
   }}>
@@ -150,7 +150,7 @@ export default function HomePage() {
           </div>
 
           {/* Hero text */}
-          <section className="relative z-10">
+          <section className="relative z-[20]">
             <div className="max-w-[1400px] mx-auto px-[60px]">
               <div className="flex flex-row h-[calc(100vh-58px)] min-h-[380px] max-h-[700px] items-stretch">
 
