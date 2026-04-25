@@ -144,8 +144,6 @@ export default function HomePage() {
       ════════════════════════════════════════ */}
       <div className="hidden lg:block">
         <div className="relative overflow-visible">
-
-          {/* Background */}
           <div className="absolute inset-0 w-full h-full">
             <img src="/hero-bg.png" alt="" className="w-full h-full object-cover object-[center_75%]" />
           </div>
@@ -194,7 +192,7 @@ export default function HomePage() {
                 Key fix: hero row has overflow-hidden so the photo stays clipped at bottom.
                 Photo uses h-full + object-bottom so it anchors to the bottom of the row.
               */}
-              <div className="flex flex-row h-[calc(100vh-64px-107px)] min-h-[380px] max-h-[700px] items-stretch overflow-hidden">
+              <div className="flex flex-row h-[calc(100vh-64px-107px)] min-h-[380px] max-h-[700px] items-stretch">
 
                 {/* Left — Text, vertically centered */}
                 <div className="w-[52%] flex items-center pl-[26px]">
@@ -237,12 +235,12 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                {/* Right — Photo pinned to bottom of hero row */}
-                <div className="w-[48%] flex items-end justify-end pr-[26px]">
+                {/* Right — Photo absolute, anchored to bottom, goes behind cards */}
+                <div className="w-[48%] relative">
                   <img
                     src="/ClearHandy.png"
                     alt="Professional handyman"
-                    className="h-full w-auto object-contain object-bottom translate-y-[40px]"
+                    className="absolute bottom-0 right-[26px] w-auto h-[calc(100vh-64px)] object-contain object-bottom translate-y-[107px]"
                   />
                 </div>
 
