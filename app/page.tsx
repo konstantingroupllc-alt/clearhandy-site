@@ -174,7 +174,7 @@ export default function HomePage() {
   <div
   className="absolute z-[50] pointer-events-none"
   style={{
-    left: "-300px",
+    left: "-180px",
     top: "56%",
     transform: "translateY(-50%)",
   }}
