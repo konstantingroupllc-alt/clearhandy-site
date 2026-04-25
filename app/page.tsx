@@ -112,7 +112,7 @@ export default function HomePage() {
         <div className="relative overflow-visible h-[calc(100vh-58px)]">
 
           <div className="absolute inset-0 w-full h-full">
-            <img src="/hero-bg.png" alt="" className="w-full h-full object-cover object-[center_65%]" />
+            <img src="/hero-bg.png" alt="" className="w-full h-full object-cover object-[center_60%]" />
           </div>
           <div className="absolute inset-0 w-full h-full pointer-events-none" style={{
             background: `linear-gradient(to right,
