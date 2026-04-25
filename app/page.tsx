@@ -150,7 +150,7 @@ export default function HomePage() {
               <div className="flex flex-row h-[calc(100vh-64px-107px)] min-h-[380px] max-h-[700px] items-stretch">
 
                 <div className="w-[52%] flex items-center">
-                  <div>
+                  <div className="-mt-10">
                     <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
                       Fix It Right<br />the First Time
                     </h1>
