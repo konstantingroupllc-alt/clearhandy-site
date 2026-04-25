@@ -125,9 +125,9 @@ export default function HomePage() {
 
           {/* Satisfaction badge */}
           <div
-  className="absolute z-[30] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+  className="absolute z-[5] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
   style={{
-    left: "calc(51% - 80px)",
+    left: "calc(51% - 40px)",
     top: "56%",
   }}>
             <div className="w-[230px] rounded-2xl bg-white/50 backdrop-blur-xl shadow-[0_18px_40px_rgba(0,0,0,0.10)] border border-white/70 p-3">
