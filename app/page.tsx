@@ -111,10 +111,10 @@ export default function HomePage() {
       <div className="hidden lg:block">
         <div className="relative overflow-visible pb-[120px]">
 
-          <div className="absolute inset-0 w-full h-[calc(100%+160px)]">
+          <div className="absolute inset-0 w-full h-full">
             <img src="/hero-bg.png" alt="" className="w-full h-full object-cover object-[center_30%]" />
           </div>
-          <div className="absolute inset-0 w-full h-[calc(100%+160px)] pointer-events-none" style={{
+          <div className="absolute inset-0 w-full h-full pointer-events-none" style={{
             background: `linear-gradient(to right,
               rgba(244,242,239,0.98) 0%,
               rgba(244,242,239,0.94) 40%,
@@ -199,7 +199,7 @@ export default function HomePage() {
 
               </div>
             </div>
-        </div>
+          </section>
 
           {/* Feature cards */}
           <section id="about" className="relative z-20 -mt-[35px]">
