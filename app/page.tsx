@@ -202,7 +202,7 @@ export default function HomePage() {
           </section>
 
           {/* Feature cards */}
-          <section id="about" className="relative z-20 -mt-[95px]">
+          <section id="about" className="relative z-20 -mt-[70px]">
             <div className="max-w-[1100px] mx-auto px-[60px] pb-6">
               <div className="grid grid-cols-4 gap-4">
                 {[
