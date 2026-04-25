@@ -247,7 +247,7 @@ export default function HomePage() {
   <img
     src="/ClearHandy.png"
     alt="Professional handyman"
-    className="h-full max-h-[700px] w-auto object-contain object-bottom translate-y-[75px]"
+    className="h-[700px] w-auto object-contain object-bottom translate-y-[75px]"
   />
 </div>
               </div>
