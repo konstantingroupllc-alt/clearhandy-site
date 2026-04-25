@@ -172,7 +172,7 @@ export default function HomePage() {
 <div className="w-[48%] relative">
   {/* Satisfaction badge */}
   <div
-  className="absolute z-[10] pointer-events-none"
+  className="absolute z-[50] pointer-events-none"
   style={{
     left: "-150px",
     top: "56%",
