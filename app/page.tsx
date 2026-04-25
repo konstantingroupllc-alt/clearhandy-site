@@ -127,9 +127,9 @@ export default function HomePage() {
           <div
   className="absolute pointer-events-none z-[15]"
   style={{
-    left: "calc(50% + 50px)", // двигаем вправо
+    left: "50%",
     top: "56%",
-    transform: "translate(-50%, -50%)",
+    transform: "translate(calc(-50% + 10px), -50%)",
   }}>
             <div className="w-[230px] rounded-2xl bg-white/50 backdrop-blur-xl shadow-[0_18px_40px_rgba(0,0,0,0.10)] border border-white/70 p-3">
               <div className="flex items-center gap-2">
