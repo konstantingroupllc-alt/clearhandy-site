@@ -124,7 +124,12 @@ export default function HomePage() {
           }} />
 
           {/* Satisfaction badge */}
-          <div className="absolute left-[47%] top-[56%] z-[30] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+          <div
+  className="absolute z-[30] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+  style={{
+    left: "calc(51% - 80px)",
+    top: "56%",
+  }}>
             <div className="w-[230px] rounded-2xl bg-white/50 backdrop-blur-xl shadow-[0_18px_40px_rgba(0,0,0,0.10)] border border-white/70 p-3">
               <div className="flex items-center gap-2">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
