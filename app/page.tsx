@@ -127,7 +127,7 @@ export default function HomePage() {
           <div
   className="absolute pointer-events-none z-[15]"
   style={{
-    left: "calc(50% + 70px)", // двигаем вправо
+    left: "calc(50% + 50px)", // двигаем вправо
     top: "56%",
     transform: "translate(-50%, -50%)",
   }}>
