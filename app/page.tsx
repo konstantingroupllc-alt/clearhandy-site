@@ -123,17 +123,6 @@ export default function HomePage() {
               rgba(244,242,239,0.0) 90%)`,
           }} />
 
-<div>
-                  <p className="text-[18px] font-bold text-[#0B1F3A] leading-tight">100%</p>
-                  <p className="text-[13px] font-semibold text-[#0B1F3A] leading-tight">Satisfaction</p>
-                  <p className="text-[13px] font-semibold text-[#0B1F3A] leading-tight">Guarantee</p>
-                </div>
-              </div>
-              <div className="my-2 h-px bg-gray-300/50" />
-              <p className="text-[11px] text-gray-600 leading-snug">We stand behind our work.<br />Your satisfaction is our priority.</p>
-            </div>
-          </div>
-
           {/* Hero text */}
           <section className="relative z-[20]">
             <div className="max-w-[1400px] mx-auto px-[60px]">
