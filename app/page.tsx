@@ -146,7 +146,7 @@ export default function HomePage() {
           {/* Hero text */}
           <section className="relative z-10">
             <div className="max-w-[1400px] mx-auto px-[60px]">
-              <div className="flex flex-row h-[calc(100vh-64px-107px)] min-h-[380px] max-h-[700px] items-stretch">
+              <div className="flex flex-row h-[calc(100vh-64px)] min-h-[380px] max-h-[700px] items-stretch">
 
                 <div className="w-[52%] flex items-center">
                   <div className="-mt-[50px]">
@@ -193,7 +193,7 @@ export default function HomePage() {
                   <img
                     src="/ClearHandy.png"
                     alt="Professional handyman"
-                    className="absolute bottom-0 right-0 w-auto h-[calc(100vh-64px)] object-contain object-bottom translate-y-[60px]"
+                    className="absolute bottom-0 right-0 w-auto h-[calc(100vh-64px)] object-contain object-bottom translate-y-[0]"
                   />
                 </div>
 
