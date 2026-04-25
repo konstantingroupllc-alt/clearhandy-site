@@ -69,13 +69,13 @@ export default function HomePage() {
       {/* ══ DESKTOP HEADER ══ */}
       <header className="hidden lg:block sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-border">
         <div className="max-w-[1400px] mx-auto px-[60px]">
-          <div className="flex items-center justify-between h-14">
-            <a href="#"><img src="/logo.png" alt="ClearHandy" className="h-10 w-auto" /></a>
-            <nav className="flex items-center gap-6">
-              <a href="#services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Services</a>
-              <a href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About</a>
-              <a href="#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</a>
-              <a href="tel:+17272223122" className="flex items-center gap-2 text-sm text-foreground font-semibold hover:text-primary transition-colors">
+          <div className="flex items-center justify-between h-[58px]">
+            <a href="#"><img src="/logo.png" alt="ClearHandy" className="h-11 w-auto" /></a>
+            <nav className="flex items-center gap-7">
+              <a href="#services" className="text-[13px] text-muted-foreground hover:text-foreground transition-colors">Services</a>
+              <a href="#about" className="text-[13px] text-muted-foreground hover:text-foreground transition-colors">About</a>
+              <a href="#contact" className="text-[13px] text-muted-foreground hover:text-foreground transition-colors">Contact</a>
+              <a href="tel:+17272223122" className="flex items-center gap-2 text-[13px] text-foreground font-semibold hover:text-primary transition-colors">
                 <Phone className="h-3.5 w-3.5" /> (727) 222-3122
               </a>
               <Button asChild size="sm"><a href="#contact">Get a Free Estimate</a></Button>
@@ -111,7 +111,7 @@ export default function HomePage() {
       <div className="hidden lg:block">
         <div className="relative overflow-visible">
 
-          <div className="absolute inset-0 w-full h-full">
+          <div className="absolute inset-0 w-full h-full min-h-[calc(100vh-58px)]">
             <img src="/hero-bg.png" alt="" className="w-full h-full object-cover object-[center_75%]" />
           </div>
 
@@ -194,7 +194,7 @@ export default function HomePage() {
                   <img
                     src="/ClearHandy.png"
                     alt="Professional handyman"
-                    className="absolute bottom-0 right-0 w-auto h-[calc(100vh-64px)] object-contain object-bottom translate-y-[107px]"
+                    className="absolute bottom-0 right-0 w-auto h-[calc(100vh-64px)] object-contain object-bottom translate-y-[130px]"
                   />
                 </div>
 
@@ -204,8 +204,8 @@ export default function HomePage() {
 
           {/* Feature cards */}
           <section id="about" className="relative z-20 -mt-[60px]">
-            <div className="max-w-[1400px] mx-auto px-[60px] pb-6">
-              <div className="grid grid-cols-4 gap-6">
+            <div className="max-w-[1100px] mx-auto px-[60px] pb-6">
+              <div className="grid grid-cols-4 gap-4">
                 {[
                   { title: "Fully Insured", desc: "Your property is protected with full insurance coverage.", icon: <svg className="w-6 h-6 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" /></svg> },
                   { title: "Clean & Respectful", desc: "We keep the workspace clean and treat your home like our own.", icon: <svg className="w-6 h-6 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12 12 3l9.75 9M4.5 10.5V21h5.25v-5.25h4.5V21h5.25V10.5" /></svg> },
