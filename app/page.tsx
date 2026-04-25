@@ -109,7 +109,7 @@ export default function HomePage() {
 
       {/* ══ DESKTOP HERO + CARDS ══ */}
       <div className="hidden lg:block">
-        <div className="relative overflow-visible">
+        <div className="relative overflow-visible h-[calc(100vh-64px)]">
 
           <div className="absolute inset-0 w-full h-full">
             <img src="/hero-bg.png" alt="" className="w-full h-full object-cover object-[center_30%]" />
