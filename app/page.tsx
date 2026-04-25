@@ -172,7 +172,7 @@ export default function HomePage() {
 <div className="w-[48%] relative">
   {/* Satisfaction badge */}
   <div
-    className="absolute left-[4%] top-[56%] z-[10] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+    className="absolute left-[1%] top-[56%] z-[10] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
   >
     <div className="w-[230px] rounded-2xl bg-white/50 backdrop-blur-xl shadow-[0_18px_40px_rgba(0,0,0,0.10)] border border-white/70 p-3">
       <div className="flex items-center gap-2">
