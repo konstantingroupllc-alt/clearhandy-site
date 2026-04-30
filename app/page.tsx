@@ -430,7 +430,7 @@ export default function HomePage() {
                   <div className="p-2.5 rounded-lg bg-primary/10"><Mail className="h-4 w-4 text-primary" /></div>
                   <div>
                     <h3 className="font-semibold text-foreground text-sm">Email</h3>
-                    <a href="mailto:konstantingroupllc@gmail.com" className="text-muted-foreground hover:text-primary transition-colors text-sm">konst@clearhandy.com</a>
+                    <a href="mailto:konstantingroupllc@gmail.com" className="text-muted-foreground hover:text-primary transition-colors text-sm">konstantingroupllc@gmail.com</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -487,7 +487,7 @@ export default function HomePage() {
               <h4 className="font-semibold mb-3 text-sm">Contact Info</h4>
               <ul className="space-y-2 text-sm text-primary-foreground/80">
                 <li className="flex items-center gap-2"><Phone className="h-4 w-4" /><a href="tel:+17272223122" className="hover:text-primary-foreground">(727) 222-3122</a></li>
-                <li className="flex items-center gap-2"><Mail className="h-4 w-4" /><a href="mailto:konst@clearhandy.com" className="hover:text-primary-foreground">konst@clearhandy.com</a></li>
+                <li className="flex items-center gap-2"><Mail className="h-4 w-4" /><a href="mailto:konstantingroupllc@gmail.com" className="hover:text-primary-foreground">konstantingroupllc@gmail.com</a></li>
                 <li className="flex items-center gap-2"><MapPin className="h-4 w-4" /><span>Clearwater, FL</span></li>
               </ul>
             </div>
