@@ -430,7 +430,7 @@ export default function HomePage() {
                   <div className="p-2.5 rounded-lg bg-primary/10"><Mail className="h-4 w-4 text-primary" /></div>
                   <div>
                     <h3 className="font-semibold text-foreground text-sm">Email</h3>
-                    <a href="mailto:konst@clearhandy.com" className="text-muted-foreground hover:text-primary transition-colors text-sm">konst@clearhandy.com</a>
+                    <a href="mailto:konstantingroupllc@gmail.com" className="text-muted-foreground hover:text-primary transition-colors text-sm">konst@clearhandy.com</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
