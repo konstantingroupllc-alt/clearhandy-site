@@ -66,7 +66,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen">
 
-      {/* ══ DESKTOP HEADER ══ */}
+      {/* == DESKTOP HEADER == */}
       <header className="hidden lg:block sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-border">
         <div className="max-w-[1400px] mx-auto px-[60px]">
           <div className="flex items-center justify-between h-[58px]">
@@ -84,7 +84,7 @@ export default function HomePage() {
         </div>
       </header>
 
-      {/* ══ MOBILE HEADER ══ */}
+      {/* == MOBILE HEADER == */}
       <header className="lg:hidden sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-border">
         <div className="px-4">
           <div className="flex items-center justify-between h-16">
@@ -107,7 +107,7 @@ export default function HomePage() {
         )}
       </header>
 
-      {/* ══ DESKTOP HERO + CARDS ══ */}
+      {/* == DESKTOP HERO + CARDS == */}
       <div className="hidden lg:block">
         <div className="relative overflow-visible h-[calc(100vh-58px)]">
 
@@ -262,7 +262,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* ══ MOBILE ══ */}
+      {/* == MOBILE == */}
       <div className="lg:hidden pb-20">
         <div className="relative overflow-hidden bg-[#f0ebe3]">
           <div className="absolute inset-0 w-full h-full">
@@ -379,7 +379,7 @@ export default function HomePage() {
         </a>
       </div>
 
-      {/* ══ SERVICES ══ */}
+      {/* == SERVICES == */}
       <section id="services" className="py-8 md:py-12">
         <div className="max-w-[1400px] mx-auto px-[60px]">
           <div className="text-center mb-2">
@@ -409,7 +409,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ══ CONTACT ══ */}
+      {/* == CONTACT == */}
       <section id="contact" className="py-10 md:py-10 bg-card">
         <div className="max-w-[1400px] mx-auto px-[60px]">
           <div className="text-center mb-10">
@@ -475,7 +475,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ══ FOOTER ══ */}
+      {/* == FOOTER == */}
       <footer className="py-10 bg-foreground text-primary-foreground">
         <div className="max-w-[1400px] mx-auto px-[60px]">
           <div className="grid md:grid-cols-3 gap-8">
