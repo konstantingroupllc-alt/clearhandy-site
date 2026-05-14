@@ -277,7 +277,7 @@ export default function HomePage() {
     </h1>
 
     <p className="mt-1 text-[16px] min-[390px]:text-lg font-semibold text-gray-800 leading-tight">
-      No Delays. No Headaches.
+      Competent. Reliable. Fair.
     </p>
 
     <p className="mt-2.5 text-xs text-gray-500 flex flex-col gap-1">
