@@ -458,7 +458,7 @@ export default function HomePage() {
                 </Field>
                 <Field>
                   <FieldLabel htmlFor="phone">Phone</FieldLabel>
-                  <Input id="phone" type="tel" placeholder="(555) 555-5555" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} required />
+                  <Input id="phone" type="tel" placeholder="(111) 111-1111" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} required />
                 </Field>
                 <Field>
                   <FieldLabel htmlFor="email">Email</FieldLabel>
