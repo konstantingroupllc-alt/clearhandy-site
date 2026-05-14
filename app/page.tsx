@@ -134,7 +134,6 @@ export default function HomePage() {
                       Your trusted<br />Handyman services
                     </h1>
                     <p className="mt-2 text-xl font-semibold text-gray-700">Competent. Reliable. Fair.</p>
-                    <p className="mt-1 text-sm text-gray-500">Fully insured &nbsp;•&nbsp; Quality-focused work &nbsp;•&nbsp; Fair pricing</p>
 
                     <div className="mt-3 flex flex-col gap-1.5">
                       {["3+ years of construction experience","Clean work, respect for your home","All steps agreed on paper before we start","Transparent pricing — no surprises"].map((item) => (
