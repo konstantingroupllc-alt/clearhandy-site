@@ -131,9 +131,9 @@ export default function HomePage() {
                 <div className="w-[52%] flex items-center">
                   <div className="-mt-[50px]">
                     <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-[1.15]">
-                      Fix It Right<br />the First Time
+                      Your trusted<br />Handyman services
                     </h1>
-                    <p className="mt-2 text-xl font-semibold text-gray-700">No Delays. No Headaches.</p>
+                    <p className="mt-2 text-xl font-semibold text-gray-700">Competent. Reliable. Fair.</p>
                     <p className="mt-1 text-sm text-gray-500">Fully insured &nbsp;•&nbsp; Quality-focused work &nbsp;•&nbsp; Fair pricing</p>
 
                     <div className="mt-3 flex flex-col gap-1.5">
