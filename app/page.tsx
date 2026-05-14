@@ -131,7 +131,7 @@ export default function HomePage() {
                 <div className="w-[52%] flex items-center">
                   <div className="-mt-[50px]">
                     <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-[1.15]">
-                      Your trusted<br />Handyman services
+                      YOUR TRUSTED<br />HANDYMAN SERVICES
                     </h1>
                     <p className="mt-2 text-xl font-semibold text-gray-700">Competent. Reliable. Fair.</p>
 
@@ -273,7 +273,7 @@ export default function HomePage() {
   {/* ТЕКСТ */}
   <div>
     <h1 className="mt-[-8px] text-3xl font-bold text-gray-900 leading-tight">
-      Fix It Right<br />the First Time
+      YOUR TRUSTED<br />HANDYMAN SERVICES
     </h1>
 
     <p className="mt-1 text-[16px] min-[390px]:text-lg font-semibold text-gray-800 leading-tight">
