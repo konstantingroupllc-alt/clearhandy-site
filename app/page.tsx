@@ -436,15 +436,16 @@ export default function HomePage() {
                   <div className="p-2.5 rounded-lg bg-primary/10"><MapPin className="h-4 w-4 text-primary" /></div>
                   <div>
                     <h3 className="font-semibold text-foreground text-sm">Location</h3>
-                    <p className="text-muted-foreground text-sm">Clearwater, FL — serving the entire Tampa Bay Area</p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=1464+Pinebrook+Dr,+Clearwater,+FL+33755" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors text-sm block">1464 Pinebrook Dr, Clearwater, FL 33755</a>
+                    <p className="text-muted-foreground text-sm">Serving the entire Tampa Bay Area</p>
                   </div>
                 </div>
               </div>
               <div className="rounded-lg overflow-hidden border border-border h-[260px]">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112841.65657196096!2d-82.84739585!3d27.96579045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2f0a864f2e337%3A0xab41ee576c9bb8eb!2sClearwater%2C%20FL!5e0!3m2!1sen!2sus!4v1702500000000!5m2!1sen!2sus"
+                  src="https://maps.google.com/maps?q=1464%20Pinebrook%20Dr%2C%20Clearwater%2C%20FL%2033755&z=13&output=embed"
                   width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade" title="Clearwater FL"
+                  referrerPolicy="no-referrer-when-downgrade" title="ClearHandy location: 1464 Pinebrook Dr, Clearwater, FL 33755"
                 />
               </div>
             </div>
@@ -487,7 +488,7 @@ export default function HomePage() {
               <ul className="space-y-2 text-sm text-primary-foreground/80">
                 <li className="flex items-center gap-2"><Phone className="h-4 w-4" /><a href="tel:+17272223122" className="hover:text-primary-foreground">(727) 222-3122</a></li>
                 <li className="flex items-center gap-2"><Mail className="h-4 w-4" /><a href="mailto:info@clearhandy.com" className="hover:text-primary-foreground">info@clearhandy.com</a></li>
-                <li className="flex items-center gap-2"><MapPin className="h-4 w-4" /><span>Clearwater, FL</span></li>
+                <li className="flex items-center gap-2"><MapPin className="h-4 w-4" /><span>1464 Pinebrook Dr, Clearwater, FL 33755</span></li>
               </ul>
             </div>
             <div>

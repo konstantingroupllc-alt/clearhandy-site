@@ -37,6 +37,29 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-background">
       <body className="font-sans antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'HandymanService',
+              name: 'ClearHandy',
+              legalName: 'Konstantin Group LLC',
+              url: 'https://www.clearhandy.com',
+              telephone: '+1-727-222-3122',
+              email: 'info@clearhandy.com',
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: '1464 Pinebrook Dr',
+                addressLocality: 'Clearwater',
+                addressRegion: 'FL',
+                postalCode: '33755',
+                addressCountry: 'US',
+              },
+              areaServed: ['Clearwater', 'St. Petersburg', 'Tampa', 'Tampa Bay Area'],
+            }),
+          }}
+        />
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
